@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="detailed-guides-show">
+      
+<article class="detailed_guide document_page detailedguide category-endorsing-sponsoring-and-supporting-visa-applicants" id="detailed_guide_485674"><header class="block headings-block"><div class="inner-block floated-children">
+      <div class="heading-with-extra">
+  <div class="inner-heading">
+    <p class="type">Guidance</p>
+    <h1>Apply for a Tier 4 sponsor licence</h1>
+  </div>
+</div>
+
+
+
+
+<div class="heading-extra">
+  <div class="inner-heading">
+    
+    
+  </div>
+</div>
+<aside class="meta metadata-list"><div class="inner-heading">
+    <dl>
+<dt>From:</dt>
+        <dd class="js-hide-extra-metadata"><a class="organisation-link" href="/government/organisations/uk-visas-and-immigration">UK Visas and Immigration</a></dd>
+
+      
+
+        <dt>First published:</dt>
+  <dd><abbr class="date" title="2014-01-22T15:48:00+00:00">22 January 2014</abbr></dd>
+    <dt>Last updated:</dt>
+    <dd>
+      <abbr class="date" title="2015-04-06T00:00:12+01:00"> 6 April 2015</abbr>
+      , <a class="see-all-updates" href="#history">see all updates</a>
+    </dd>
+
+
+        <dt>Part of:</dt>
+        <dd class="js-hide-extra-metadata">
+<a class="primary-mainstream-category-link" href="/browse/visas-immigration/sponsor-workers-students/endorsing-sponsoring-and-supporting-visa-applicants">Endorsing, sponsoring and supporting visa applicants</a> and <a class="topic-link" href="/government/topics/borders-and-immigration">Borders and immigration</a>
+</dd>
+
+    </dl>
+</div>
+</aside>
+</div>
+  </header><div class="summary-block">
+    <div class="inner-block">
+      <div class="summary">
+  <p>How to apply for a student sponsor licence.</p>
+</div>
+
+    </div>
+  </div>
+
+  <div class="block-2">
+    <div class="inner-block">
+      <nav class="contextual-info" id="page-navigation"><h1>Contents</h1>
+    <nav class="detailed_guide_parts" role="navigation"><ol id="document_sections">
+<li>
+            <a href="#how-to-apply-for-a-tier-4-licence">How to apply for a Tier 4 licence</a>
+          </li>
+          <li>
+            <a href="#apply-for-your-licence">Apply for your licence</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#sponsorship-management-roles">Sponsorship management roles</a>
+          </li>
+          <li>
+            <a href="#estimate-how-many-confirmation-of-acceptance-for-studies-you-need">Estimate how many Confirmation of Acceptance for Studies you need</a>
+          </li>
+          <li>
+            <a href="#be-prepared-to-meet-your-sponsorship-duties">Be prepared to meet your sponsorship duties</a>
+          </li>
+          <li>
+            <a href="#tier-4-sponsor-status">Tier 4 sponsor status</a>
+          </li>
+          <li>
+            <a href="#tier-4-premium-customer-service">Tier 4 premium customer service</a>
+          </li>
+          <li class="more-like-this">
+            <a href="#more-like-this">See more like this</a>
+          </li>
+      </ol></nav></nav>
+</div>
+  </div>
+  <div class="block-3">
+    <div class="inner-block">
+      <article class="document"><div class="body">
+    <div class="govspeak">
+<p>Apply for a Tier 4 sponsor licence if you want to enrol students from outside the European Economic Area (EEA). </p>
+
+<p>A Tier 4 sponsor is an education provider that offers courses of study to full-time students in the UK. There are some exceptions, read the <a href="https://www.gov.uk/government/publications/sponsor-a-tier-4-student-guidance-for-educators">sponsor guidance</a> to find out if your institution is eligible.</p>
+
+<h2 id="how-to-apply-for-a-tier-4-licence">How to apply for a Tier 4 licence</h2>
+
+<p>Check the education provider or institution meets the sponsor requirements in the <a href="https://www.gov.uk/government/publications/sponsor-a-tier-4-student-guidance-for-educators">sponsor guidance</a> and is ready to comply with them.</p>
+
+<ol>
+<li>Decide who will do the sponsor management roles within your institution.</li>
+  <li>Estimate the number of confirmations of acceptance for studies (<abbr title="Confirmation for acceptance for studies">CAS</abbr>) you would like to apply for in the first year of your licence.</li>
+  <li>
+<a rel="external" href="https://www.points.homeoffice.gov.uk/gui-sponsor-jsf/SponsorHome.faces">Apply online</a> and pay the fee.</li>
+  <li>Send UK Visas and Immigration (<abbr title="UK Visas and Immigration">UKVI</abbr>) the documents listed in <a href="https://www.gov.uk/government/publications/supporting-documents-for-sponsor-applications-appendix-a">sponsor guidance appendix A</a>.</li>
+  <li>If your application is approved, you&#x2019;ll be given probationary sponsor status and emailed a login for the <a rel="external" href="https://www.points.homeoffice.gov.uk/gui-sms-jsf/home/SMS-003-Home.faces">sponsorship management system</a>.</li>
+</ol>
+<p>When you successfully apply for a Tier 4 licence, <abbr title="UK Visas and Immigration">UKVI</abbr> will give you a probationary sponsor licence. This is a transitional period lasting 12 months whilst you demonstrate you can fulfil all of your duties as a Tier 4 sponsor. You must apply for a basic compliance assessment after 12 months.</p>
+
+<h2 id="apply-for-your-licence">Apply for your licence</h2>
+
+<p>You <a rel="external" href="https://www.points.homeoffice.gov.uk/gui-sponsor-jsf/SponsorHome.faces">apply for your licence online</a>. It should take about 20 minutes.</p>
+
+<p>You&#x2019;ll need to pay a fee when you apply online. The licence application fee is &#xA3;536.</p>
+
+<p>Print off the submission sheet and send it with your supporting documents to <abbr title="UK Visas and Immigration">UKVI</abbr>.</p>
+
+<div class="address"><div class="adr org fn"><p>
+
+Sponsor casework operations 
+<br/>Sponsor applications team 
+<br/>UK Visas and Immigration 
+<br/>PO Box 3468 
+<br/>Sheffield 
+<br/>S3 8WA
+<br/></p></div></div>
+
+<p><abbr title="UK Visas and Immigration">UKVI</abbr> will review your application. They may want to visit your institution.</p>
+
+<p>Most applications are dealt with in 4 weeks.</p>
+
+<p>When <abbr title="UK Visas and Immigration">UKVI</abbr> have made a decision, they will write to tell you if you&#x2019;ve been successful.</p>
+
+<h2 id="contact">Contact</h2>
+<p>If you have a question about your application, contact:</p>
+
+<p>Education providers&#x2019; helpline: <a href="mailto:Educatorshelpdesk@homeoffice.gsi.gov.uk">Educatorshelpdesk@homeoffice.gsi.gov.uk</a> </p>
+
+<p>Telephone: 0300 123 4699</p>
+
+<h2 id="sponsorship-management-roles">Sponsorship management roles</h2>
+
+<p>When you apply for your licence you&#x2019;ll need to allocate these 4 roles to members of your staff:</p>
+
+<ul>
+<li>authorising officer &#x2013; a senior and competent person who is responsible for the actions of staff and representatives who use the sponsor management system (<abbr title="sponsor management system">SMS</abbr>)</li>
+  <li>key contact &#x2013; your main point of contact with <abbr title="UK Visas and Immigration">UKVI</abbr> about your institution&#x2019;s application</li>
+  <li>level 1 user &#x2013; responsible for all day-to-day management of your licence using the <abbr title="sponsor management system">SMS</abbr>
+</li>
+  <li>level 2 user &#x2013; an <abbr title="sponsor management system">SMS</abbr> user with more restricted permissions than a level 1 user</li>
+</ul>
+<p>These roles can all be filled by the same person or by a combination of different people.</p>
+
+<h3 id="check-staff-are-suitable">Check staff are suitable</h3>
+
+<p>You and your staff must pass <abbr title="UK Visas and Immigration">UKVI</abbr> checks to fill these positions. You may not get your licence or you may lose it if any of these people have:</p>
+
+<ul>
+<li>an unspent criminal conviction</li>
+  <li>a fine issued by <abbr title="UK Visas and Immigration">UKVI</abbr> in the past 12 months</li>
+  <li>been reported to <abbr title="UK Visas and Immigration">UKVI</abbr> or broken the law</li>
+</ul>
+<p>They must also:</p>
+
+<ul>
+<li>be based permanently in the UK</li>
+  <li>not be a contractor or consultant contracted for a specific project</li>
+  <li>not be subject to a bankruptcy restriction order or undertaking, or a debt relief restriction order or undertaking</li>
+</ul>
+<p>In most cases they must also be a paid member of your staff or someone who has an unpaid but official role, eg a statutory appointment, an appointment by internal constitution or trust deed.</p>
+
+<p>You can read the full guidance on appointing &#x2018;Allocate key personnel&#x2019; section in the <a href="https://www.gov.uk/government/publications/sponsor-a-tier-4-student-guidance-for-educators">sponsor guidance</a>.</p>
+
+<h2 id="estimate-how-many-confirmation-of-acceptance-for-studies-you-need">Estimate how many Confirmation of Acceptance for Studies you need</h2>
+
+<p>A <abbr title="Confirmation for acceptance for studies">CAS</abbr> is a virtual document, similar to a database record. You complete a process that produces a unique <abbr title="Confirmation for acceptance for studies">CAS</abbr> reference number, which you give to the student.  A <abbr title="Confirmation for acceptance for studies">CAS</abbr> is your way of confirming, as a licensed sponsor, that:</p>
+
+<ul>
+<li>you want to sponsor an overseas student to study in the UK</li>
+  <li>to the best of your knowledge, that student meets the requirements of the rules for a valid <abbr title="Confirmation for acceptance for studies">CAS</abbr> and will be able to make a successful application for leave to come to or stay in the UK</li>
+</ul>
+<p>When you apply for a sponsor licence, you must apply for the number of confirmations of acceptance for studies (<abbr title="Confirmation for acceptance for studies">CAS</abbr>) you would like to assign in your first year. </p>
+
+<p>The number must include:</p>
+
+<ul>
+<li>existing students who you expect to apply for an extension</li>
+  <li>new students you want to sponsor</li>
+</ul>
+<p>You may request a <abbr title="Confirmation for acceptance for studies">CAS</abbr> allocation of up to 50 per cent of your current student body.  Your student body must comprise UK, EU or Swiss nationals.</p>
+
+<p>You must provide evidence to support your request, as well as your educational oversight report. As set out in our sponsor guidance, <abbr title="UK Visas and Immigration">UKVI</abbr> will consider a range of factors in order to reach a decision on your <abbr title="Confirmation for acceptance for studies">CAS</abbr> allocation.</p>
+
+<h2 id="be-prepared-to-meet-your-sponsorship-duties">Be prepared to meet your sponsorship duties</h2>
+
+<p>Before you apply you must have certain things in place.</p>
+
+<p>When you apply for a sponsor licence, you must show that you meet the eligibility and suitability requirements as an education provider.</p>
+
+<p>You must show that all of your sites meet acceptable education standards.  You must:</p>
+
+<ul>
+<li>have had a Tier 4  educational oversight inspection or a statutory education inspection , and you must have achieved the required rating; or</li>
+  <li>be recognised as an overseas HEI offering short-term &#x2018;study abroad&#x2019; programmes in your own premises in the UK.</li>
+</ul>
+<p>You can find out more information in the &#x2018;Educational Oversight requirement&#x2019; section in document 1 of the Tier 4  <a href="https://www.gov.uk/government/publications/sponsor-a-tier-4-student-guidance-for-educators">sponsor guidance</a>.</p>
+
+<p>As a Tier 4 sponsor, you must comply with the guidance for sponsors and fulfil certain duties. For example, you must contact <abbr title="UK Visas and Immigration">UKVI</abbr> if a student:</p>
+
+<ul>
+<li>does not arrive for their course;</li>
+  <li>is absent without permission for a significant period;</li>
+  <li>leaves their course earlier than expected; or</li>
+  <li>is asked to leave the course.</li>
+</ul>
+<p>You must keep proper records of the students you sponsor, including contact details and a copy of their passport and Biometric Residence Permit (BRP) and give them to <abbr title="UK Visas and Immigration">UKVI</abbr> when it asks for them. For more information see sponsor guidance <a rel="external" href="http://www.ukba.homeoffice.gov.uk/sitecontent/documents/employersandsponsors/pbsguidance/guidancefrom31mar09/appendix-d1.pdf?view=Binary">Appendix D</a>.</p>
+
+<p><abbr title="UK Visas and Immigration">UKVI</abbr> will monitor your compliance with your duties. It will:</p>
+
+<ul>
+<li>give you a suitable allocation of <abbr title="Confirmation for acceptance for studies">CAS</abbr>, dependent on the size of your current student body; </li>
+  <li>make visits, pre-arranged or not, to check compliance; and</li>
+  <li>issue civil penalties if it finds evidence that you have breached the <a rel="external" href="http://www.ukba.homeoffice.gov.uk/sitecontent/documents/employersandsponsors/preventingillegalworking/currentguidanceandcodes/full-guide?view=Binary">illegal working regulations</a>
+</li>
+</ul>
+<p>Where there has been a breach of sponsor duties, <abbr title="UK Visas and Immigration">UKVI</abbr> will consider the nature of the breach and may take compliance action against you. </p>
+
+<h2 id="tier-4-sponsor-status">Tier 4 sponsor status</h2>
+
+<p>When you have had a probationary sponsor licence for 12 months, you must apply for a basic compliance assessment in order to gain Tier 4 Sponsor status. <abbr title="UK Visas and Immigration">UKVI</abbr> will revoke your licence if you do not meet the requirements. </p>
+
+<p>The <a href="https://www.gov.uk/government/publications/sponsor-a-tier-4-student-guidance-for-educators">sponsor guidance</a>  explains how to apply for a basic compliance assessment.</p>
+
+<h2 id="tier-4-premium-customer-service">Tier 4 premium customer service</h2>
+
+<p>The Tier 4 premium customer service is designed to:</p>
+
+<ul>
+<li>offer your organisation support in sponsoring all overseas students </li>
+  <li>develop a relationship with you and a long-term understanding of your requirements</li>
+</ul>
+<p>The <a href="https://www.gov.uk/government/publications/tier-4-premium-customer-service-for-sponsors">Tier 4 premium customer service for sponsors</a> contains more information on this service.</p>
+</div>
+  </div>
+</article>
+</div>
+  </div>
+  <div class="block-4 block related-links js-back-to-content-stop">
+    <div class="inner-block">
+      <div class="js-back-to-content back-to-content visuallyhidden">
+        <a href="#page-navigation">Back to contents</a>
+      </div>
+      <div class="document-footer-meta js-footer">
+  <div id="history" class="history">
+    <dl class="primary-metadata">
+<dt>Published:</dt>
+        <dd><abbr class="date" title="2014-01-22T15:48:00+00:00">22 January 2014</abbr></dd>
+          <dt>Updated:</dt>
+          <dd><abbr class="date" title="2015-04-06T00:00:12+01:00"> 6 April 2015</abbr></dd>
+    </dl>
+<div class="footer-change-notes js-toggle-footer-change-notes">
+        <p class="toggle">+ full page history</p>
+        <div class="overlay js-hidden">
+          <dl>
+<dt><abbr class="published-at datetime" title="2015-04-06T00:00:12+01:00"> 6 April 2015 12:00am</abbr></dt>
+              <dd>Updated sponsor licence information</dd>
+              <dt><abbr class="published-at datetime" title="2014-04-08T11:01:46+01:00"> 8 April 2014 11:01am</abbr></dt>
+              <dd>Fee change introduced.</dd>
+              <dt><abbr class="published-at datetime" title="2014-01-22T15:48:00+00:00">22 January 2014  3:48pm</abbr></dt>
+              <dd>First published.</dd>
+          </dl>
+</div>
+      </div>
+  </div>
+  <div class="links">
+    <dl class="primary-metadata">
+<dt>From:</dt>
+          <dd class="from"><a class="organisation-link" href="/government/organisations/uk-visas-and-immigration">UK Visas and Immigration</a></dd>
+
+    </dl>
+</div>
+</div>
+
+        <aside id="more-like-this" class="aside-more-like-this"><h1>More like this</h1>
+            <section id="guide-categories" class="categories"><div class="inner">
+                <h2>All detailed guidance about</h2>
+                <ul>
+<li class="mainstream_category" id="mainstream_category_155">
+                      <a href="/browse/visas-immigration/sponsor-workers-students/endorsing-sponsoring-and-supporting-visa-applicants">Endorsing, sponsoring and supporting visa applicants</a>
+</li>                </ul>
+</div>
+            </section></aside>
+</div>
+  </div>
+</article>
+</div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/apply-for-a-tier-4-sponsor-licence"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value="ukvi"/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

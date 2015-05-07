@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="">
+      
+<article class="news_article document-page newsarticle" id="news_article_428596"><header class="block headings-block"><div class="inner-block floated-children">
+      <div class="heading-with-extra">
+  <div class="inner-heading">
+    <p class="type">News story</p>
+    <h1>Public approval for driving limits for 16 drugs</h1>
+  </div>
+</div>
+
+
+
+
+<div class="heading-extra">
+  <div class="inner-heading">
+    
+    
+  </div>
+</div>
+<aside class="meta metadata-list"><div class="inner-heading">
+    <dl>
+<dt>From:</dt>
+        <dd class="js-hide-extra-metadata">
+<a class="organisation-link" href="/government/organisations/department-for-transport">Department for Transport</a> and <a class="role-appointment-link" href="/government/people/robert-goodwill">Robert Goodwill</a>
+</dd>
+
+      
+
+        <dt>First published:</dt>
+  <dd><abbr class="date" title="2014-03-27T09:35:00+00:00">27 March 2014</abbr></dd>
+
+
+        <dt>Part of:</dt>
+        <dd class="js-hide-extra-metadata">
+<a class="policy-link" href="/government/policies/making-roads-safer">Road safety</a> and <a class="topic-link" href="/government/topics/transport">Transport</a>
+</dd>
+
+    </dl>
+</div>
+</aside>
+</div>
+  </header><div class="block-2 ">
+    <div class="inner-block">
+      <div class="summary">
+  <p>The recommended limits for 16 different drugs have now been approved following 2 government consultations.</p>
+</div>
+
+    </div>
+  </div>
+
+  <div class="block-3">
+    <div class="inner-block">
+      <aside class="lead-image-sidebar sidebar"><figure class="image embedded"><div class="img"><img alt="Robert Goodwill MP visiting a drug testing laboratory." src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/image_data/file/24168/s300_robert-goodwill-mp-drug-testing.jpg"/></div>
+  </figure></aside>
+</div>
+  </div>
+  <div class="block-4">
+    <div class="inner-block">
+      <div class="document body">
+        <div class="govspeak">
+<p>Today (27 March 2014) the government&#x2019;s ambition to create a new drug drive limit moved a step closer following the results of 2 <a href="https://www.gov.uk/government/consultations/drug-driving-proposed-regulations">public consultations</a>. </p>
+
+<p>The recommended limits for 16 different drugs have now been approved and will see 8 generally prescription and 8 illicit drugs added into new regulations that will come in to force in the autumn 2014. </p>
+
+<p>The new rules will mean it will be an offence to be over the generally prescribed limits for each drug and drive a vehicle, as it is with drink driving. </p>
+
+<p>Road Safety Minister Robert Goodwill said:</p>
+
+<blockquote>
+  <p>The results of the consultation is sending the strongest possible message that you cannot take illegal drugs and drive. This new offence will make our roads safer for everyone by making it easier for the police to tackle those who drive after taking illegal drugs. It will also clarify the limits for those who take medication.</p>
+
+  <p class="last-child">The next step is to take these limits to Parliament to see the offence come into force later this year.</p>
+</blockquote>
+
+<p>In March 2013, the department took expert advice from a medical panel on the potential drug limits that the government should consult on. The department accepted most of the recommendations made by the panel and has consulted on limits that are a &#x2018;zero tolerance&#x2019; approach to deter people from taking drugs and driving. </p>
+
+<p>The limits to be included in the new regulations are not set at 0 as drugs taken for medical conditions can be absorbed in the body to produce trace effects. </p>
+
+<p>It is also important to recognise that different drugs are broken down at different speeds and that is reflected in the disparities between the limits. </p>
+
+<p>Therefore the limits to be included in the new regulations are:</p>
+
+<h2 id="illicit-drugs">Illicit drugs</h2>
+
+<ol>
+<li>benzoylecgonine, 50 &#xB5;g/L</li>
+  <li>cocaine, 10 &#xB5;g/L</li>
+  <li>delta&#x2013;9&#x2013;tetrahydrocannabinol (cannabis and cannabinol),  2 &#xB5;g/L</li>
+  <li>ketamine, 20 &#xB5;g/L</li>
+  <li>lysergic acid diethylamide (<abbr title="lysergic acid diethylamide">LSD</abbr>), 1 &#xB5;g/L</li>
+  <li>methylamphetamine, 10 &#xB5;g/L</li>
+  <li>methylenedioxymethaphetamine (<abbr title="methylenedioxymethaphetamine">MDMA</abbr> &#x2013; ecstasy), 10 &#xB5;g/L</li>
+  <li>6-monoacetylmorphine (6-<abbr title="monoacetylmorphine">MAM</abbr> &#x2013; heroin and diamorphine), 5 &#xB5;g/L</li>
+</ol>
+<h2 id="generally-prescription-drugs">Generally prescription drugs</h2>
+
+<ol>
+<li>clonazepam,  50 &#xB5;g/L</li>
+  <li>diazepam, 550 &#xB5;g/L</li>
+  <li>flunitrazepam, 300 &#xB5;g/L</li>
+  <li>lorazepam, 100 &#xB5;g/L</li>
+  <li>methadone, 500 &#xB5;g/L</li>
+  <li>morphine, 80 &#xB5;g/L</li>
+  <li>oxazepam, 300 &#xB5;g/L</li>
+  <li>temazepam, 1000 &#xB5;g/L</li>
+</ol>
+<p>In the <a href="https://www.gov.uk/government/consultations/drug-driving-amphetamine-limit">consultation for amphetamine</a>, the government has decided that the proposed limits need to be reconsidered so that patients who take medicine for attention deficit hyperactivity disorder are not affected. The government will therefore look to re-consult on the new threshold later this year, with an agreed limit added in to the legislation at a later date. </p>
+
+<p>In the meantime the government is working closely with the medical profession to ensure healthcare professionals and patients are informed about the new drug driving offence. Later this year will also see the start of a wider communications campaign to make sure everyone that drives knows about the new changes to the law.  </p>
+
+<h2 id="see-also">See also</h2>
+
+<ul>
+<li>
+<a href="https://www.gov.uk/government/speeches/drug-driving-27-march-2014">Drug driving written ministerial statement</a>, 27 March 2014</li>
+</ul>
+<div class="contact " id="contact_1018">
+  <div class="content">
+    <h3>Roads media enquiries</h3>
+
+    <div class="vcard contact-inner">
+
+        <div class="email-url-number">
+            <p class="tel">
+              <span class="type">Press enquiries</span>
+              020 7944 3066
+            </p>
+            <p class="tel">
+              <span class="type">Out of hours</span>
+              020 7944 4292
+            </p>
+            <p class="tel">
+              <span class="type">Public enquiries</span>
+              0300 330 3000
+            </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-block">
+    <div class="document-share-links">
+  <h2>Share this page</h2>
+  <ul class="social-media-accounts">
+<li>
+      <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gov.uk%2Fgovernment%2Fnews%2Fpublic-approval-for-driving-limits-for-16-drugs" target="_blank">
+        <span class="connect">Share on</span> Facebook
+</a>    </li>
+    <li>
+      <a class="twitter" href="https://twitter.com/share?url=https%3A%2F%2Fwww.gov.uk%2Fgovernment%2Fnews%2Fpublic-approval-for-driving-limits-for-16-drugs&amp;text=Public%20approval%20for%20driving%20limits%20for%2016%20drugs" target="_blank">
+        <span class="connect">Share on</span> Twitter
+</a>    </li>
+  </ul>
+</div>
+
+  </div>
+  <div class="block-5">
+    <div class="inner-block">
+      <div class="document-footer-meta js-footer">
+  <div id="history" class="history">
+    <dl class="primary-metadata">
+<dt>Published:</dt>
+        <dd><abbr class="date" title="2014-03-27T09:35:00+00:00">27 March 2014</abbr></dd>
+    </dl>
+</div>
+  <div class="links">
+    <dl class="primary-metadata">
+<dt>From:</dt>
+          <dd class="from"><a class="organisation-link" href="/government/organisations/department-for-transport">Department for Transport</a></dd>
+          <dd class="from"><a class="role-appointment-link" href="/government/people/robert-goodwill">Robert Goodwill</a></dd>
+
+        <dt>Part of:</dt>
+          <dd class="part-of"><a class="policy-link" href="/government/policies/making-roads-safer">Road safety</a></dd>
+    </dl>
+</div>
+</div>
+
+    </div>
+  </div>
+</article>
+</div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/news/public-approval-for-driving-limits-for-16-drugs"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value="dft"/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

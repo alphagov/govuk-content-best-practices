@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="corporate-information-pages-show organisation-page">
+      
+<div class="organisation department-for-business-innovation-skills department-for-business-innovation-skills-brand-colour ministerial-department" id="organisation_3">
+  <article><div class="block-1">
+      <div class="inner-block">
+        
+<header class="page-header"><div class="logo">
+    <h1><span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-large"><span><a href="/government/organisations/department-for-business-innovation-skills">Department <br/>for Business<br/>Innovation &amp; Skills</a></span></span></h1>
+
+  </div>
+
+  
+</header><nav class="js-stick-at-top-when-scrolling"><h1>Contents</h1>
+    <ol class="dash-list">
+<li><a href="#about-this-publication-scheme">About this publication scheme</a></li>
+        <li><a href="#who-we-are-and-what-we-do">Who we are and what we do</a></li>
+        <li><a href="#what-we-spend-and-how-we-spend-it">What we spend and how we spend it</a></li>
+        <li><a href="#what-our-priorities-are-and-how-we-are-doing">What our priorities are and how we are doing</a></li>
+        <li><a href="#how-we-make-decisions">How we make decisions</a></li>
+        <li><a href="#our-policies-and-procedures">Our policies and procedures</a></li>
+        <li><a href="#lists-and-registers">Lists and registers</a></li>
+        <li><a href="#the-services-we-offer">The services we offer</a></li>
+        <li><a href="#open-data-and-datasets">Open Data and Datasets</a></li>
+        <li><a href="#requesting-information">Requesting information</a></li>
+    </ol></nav>
+</div>
+    </div>
+    <div class="block-2">
+      <div class="inner-block">
+        
+        <p class="homepage-link">
+          <a href="/government/organisations/department-for-business-innovation-skills">Department for Business, Innovation &amp; Skills homepage</a>
+</p>        <h1 class="main">Publication scheme</h1>
+        <p class="description">
+          Each government department has a publication scheme, which makes information available to the public about how it operates and how it spends its budget.
+        </p>
+        <div class="body">
+          <div class="govspeak">
+<p>This is the Department for Business, Innovation &amp; Skills (BIS) publication scheme, drawn up under the Freedom of Information Act 2000. The purpose of this publication scheme is to set out:</p>
+
+<ul>
+<li>classes of information we commit to publish as a matter of course </li>
+  <li>how this information will be published </li>
+  <li>whether the information is available free of charge or on payment</li>
+</ul>
+<p>The publication scheme fulfils the requirements of the Information Commissioner as set out in his <a rel="external" href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/publication-scheme/">model publication scheme</a> for FOI public authorities supported by the Commissioner&#x2019;s definition document for government departments.</p>
+
+<p>The BIS publication scheme includes the publication scheme of <a rel="external" href="http://www.ukti.gov.uk">UK Trade &amp; Investment</a>. </p>
+
+<h2 id="about-this-publication-scheme">About this publication scheme</h2>
+
+<p>Unless otherwise specified in this scheme:</p>
+
+<ul>
+<li>the classes of information we commit to publishing under this scheme are published on the Department&#x2019;s website and where stated</li>
+  <li>while the overwhelming majority of information published by BIS is published free of charge, charges apply in some circumstances. Where a charge is applied for information, this is indicated in the listing of specific publications or on request from the appropriate contact for hard copies.</li>
+</ul>
+<h3 id="format-and-languages">Format and languages</h3>
+
+<p>If you would like information in an alternative format, we will take reasonable steps to make the material available. The department does not routinely publish its documents in languages other than English and certain documents in Welsh. </p>
+
+<h2 id="who-we-are-and-what-we-do">Who we are and what we do</h2>
+
+<ul>
+<li>
+<a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about">about BIS</a> </li>
+  <li>management team and ministerial team information is on our <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills">departmental home page</a> </li>
+  <li>organisational structure (see: <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about#who-we-are">who we are</a>
+</li>
+  <li><a rel="external" href="http://www.bis.gov.uk/assets/biscore/corporate/docs/b/bis-organogram-november-2012.pdf">organogram</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-special-advisers">special adviser&#x2019;s meetings with newspaper and other media proprietors, editors and senior executives</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-quarterly-publications-april-to-june-2012#this-series">ministerial meetings with external organisations</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-permanent-secretary-and-sir-john-beddington-data">permanent secretary meetings with external organisations</a></li>
+  <li>our <a href="https://www.gov.uk/government/policies?keywords=&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">policy pages</a> contain information on legislation relevant to the department&#x2019;s functions.</li>
+  <li>see <a rel="external" href="http://www.legislation.gov.uk/">Legislation.gov.uk</a> for enacted and revised versions of legislation.</li>
+  <li>the BIS entry on <a href="https://www.gov.uk/government/organisations">Departments, agencies &amp; public bodies</a> includes links to the 9 executive agencies and the wide range of delivery partners that help BIS to achieve its strategic priorities. </li>
+  <li>our <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills">departmental home page</a> includes contact details</li>
+</ul>
+<h2 id="what-we-spend-and-how-we-spend-it">What we spend and how we spend it</h2>
+
+<ul>
+<li><a href="https://www.gov.uk/government/publications?keywords=annual+report&amp;publication_filter_option=corporate-reports&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">annual reports and accounts</a></li>
+  <li><a href="https://www.gov.uk/government/publications/business-plan-2012-2015-department-for-business-innovation-and-skills">business plan</a></li>
+  <li>gifts, hospitality and travel expenditure for the <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-quarterly-publications-april-to-june-2012">ministerial team</a> </li>
+  <li>gifts, hospitality and travel expenditure for the <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-directors-general">management team</a>
+</li>
+  <li>gifts, meetings, hospitality and travel expenditure for the <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-special-advisers">special advisers</a>
+</li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-spending-totals">BIS monthly spend</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-organogram-and-staff-pay-data">senior staff posts and pay details</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-organogram-and-staff-pay-data">junior staff numbers and pay scales</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-workforce-management-data-2013-to-2014">workforce data</a></li>
+  <li><a rel="external" href="http://data.gov.uk/dataset/special-advisers">names of special advisers, appointing minister and salaries of those earning &#xA3;58,200 and above</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/procurement">procurement at BIS</a></li>
+  <li>
+<a href="https://www.gov.uk/contracts-finder">Contracts Finder</a>, the government portal for tendering opportunities provides documentation for all procurements valued at over &#xA3;10,000.</li>
+</ul>
+<h2 id="what-our-priorities-are-and-how-we-are-doing">What our priorities are and how we are doing</h2>
+
+<ul>
+<li>
+<a href="https://www.gov.uk/government/publications/business-plan-2012-2015-department-for-business-innovation-and-skills">BIS&#x2019;s 2012 to 2015 business plan</a> details the department&#x2019;s priorities for delivery under the coalition government. </li>
+  <li>
+<a href="https://www.gov.uk/government/publications?keywords=structural&amp;publication_filter_option=all&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">structural reform plan</a> - monthly updates on our performance against the structural reform plan, part of the BIS business plan</li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/our-energy-use">energy use</a></li>
+  <li><a href="https://www.gov.uk/government/publications?keywords=annual+report&amp;publication_filter_option=corporate-reports&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">annual reports</a></li>
+  <li><a href="https://www.gov.uk/government/publications?departments%5B%5D=department-for-business-innovation-skills&amp;publication_type=impact-assessments">impact assessments</a></li>
+  <li>impact assessments are also listed within <a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=consultations&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">individual consultations</a>
+</li>
+  <li><a href="https://www.gov.uk/government/publications?keywords=Department+for+Business%2C+Innovation+and+Skills%3A+annual+report+and+accounts++&amp;publication_filter_option=statistics&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">statistics</a></li>
+</ul>
+<h2 id="how-we-make-decisions">How we make decisions</h2>
+
+<ul>
+<li>our <a href="https://www.gov.uk/government/policies?keywords=&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">policy pages</a> provide an overview of our main policy proposals and decisions.</li>
+  <li>all final stage and equality impact assessments are available on our <a href="https://www.gov.uk/government/publications?departments%5B%5D=department-for-business-innovation-skills&amp;publication_type=impact-assessments">publication pages</a> or are listed within <a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=consultations&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">individual consultations</a> </li>
+  <li>
+<a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=research-and-analysis&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;direction=before&amp;date=2013-01-01">analysis</a> and <a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=statistics&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">statistics</a> </li>
+  <li>the <a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=consultations&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">consultations</a> page provides information about the department&#x2019;s current policy proposals </li>
+  <li>white papers published by BIS can be identified in our publications pages by <a href="https://www.gov.uk/government/publications?keywords=white+paper&amp;publication_filter_option=all&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills">searching for &#x2018;white paper in the free-text search facility</a> </li>
+  <li><a href="https://www.gov.uk/government/publications/legislative-reform-orders-guide-for-policy-officials">guide to making legislative reform orders for policy officials</a></li>
+  <li>changes to impact assessment and regulatory policy committee scrutiny: quick start guide for policy makers</li>
+  <li><a href="https://www.gov.uk/government/publications/common-commencement-dates-a-guide-for-policy-makers">common commencement dates: a guide for policy-makers</a></li>
+  <li><a href="https://www.gov.uk/government/policies/reducing-the-impact-of-regulation-on-business">reducing the impact of regulation on business</a></li>
+  <li>BIS has <a href="https://www.gov.uk/government/publications/bis-standard-terms-and-conditions-of-contract-for-the-purchase-of-services">standard terms and conditions of contract for services (GPF 04)</a>
+</li>
+</ul>
+<h2 id="our-policies-and-procedures">Our policies and procedures</h2>
+
+<ul>
+<li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/complaints-procedure">complaints procedure</a></li>
+  <li>our <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/personal-information-charter">personal information charter</a> explains how we treat your personal data </li>
+  <li>our <a href="https://www.gov.uk/government/organisations">delivery partners</a> help us to deliver the department&#x2019;s strategic priorities.</li>
+  <li><a rel="external" href="http://www.civilservice.gov.uk/about/values/">Civil Service Code</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/recruitment">working for BIS</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-equality-and-diversity-workforce-data-2011-to-2012">equality and workforce data</a></li>
+</ul>
+<h2 id="lists-and-registers">Lists and registers</h2>
+
+<ul>
+<li>you can view the list of recent <a href="https://www.gov.uk/government/publications?keywords=&amp;publication_filter_option=foi-releases&amp;topics%5B%5D=all&amp;departments%5B%5D=department-for-business-innovation-skills&amp;world_locations%5B%5D=all&amp;direction">information releases under the FOI Act</a>
+</li>
+  <li>
+<a rel="external" href="http://webarchive.nationalarchives.gov.uk/20121205150610/http:/www.bis.gov.uk/site/foi/information-released">BIS FOI/EIR information releases prior to October 2012</a> can be accessed via the Government Web Archive.</li>
+  <li>the department publishes quarterly data on overseas travel expenses and the gifts and hospitality received by <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-quarterly-publications-april-to-june-2012">ministers</a> and <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-directors-general">senior staff</a>. Gifts and hospitality received by <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/series/bis-special-advisers">special advisers</a> is also available.</li>
+  <li><a rel="external" href="http://webarchive.nationalarchives.gov.uk/+/http:/www.cabinetoffice.gov.uk/propriety_and_ethics/ministers/travel_gifts.aspx">list of overseas travel undertaken by cabinet ministers from 1997 - 2009 and all ministers from 2007 - 2009</a></li>
+  <li><a rel="external" href="http://webarchive.nationalarchives.gov.uk/+/http:/www.cabinetoffice.gov.uk/propriety_and_ethics/ministers/travel_gifts.aspx">list of ministerial gifts given and received from 2001- 2009</a></li>
+  <li><a rel="external" href="http://www.publications.parliament.uk/pa/ld/ldreg.htm">register of Lords&#x2019; Interests</a></li>
+  <li><a rel="external" href="http://www.publications.parliament.uk/pa/cm/cmregmem/contents.htm">House of Commons Register of Member&#x2019;s Financial Interests</a></li>
+</ul>
+<h2 id="the-services-we-offer">The services we offer</h2>
+
+<ul>
+<li>
+<a href="https://www.gov.uk/government/policies?departments%5B%5D=department-for-business-innovation-skills">our policy pages</a> contain details on our services and initiatives</li>
+  <li>delivering on BIS strategic priorities and services to public authorities via our <a href="https://www.gov.uk/government/organisations">delivery partners</a> </li>
+  <li><a href="https://www.gov.uk/search?q=exporting">guidance on exporting goods</a></li>
+  <li>
+<a rel="external" href="http://www.constructionline.co.uk/static/">Constructionline</a> is the UK&#x2019;s largest register of local and national pre-qualified construction and construction-related services</li>
+  <li>
+<a rel="external" href="http://www.mymas.org/">the Manufacturing Advisory Service</a> aims to address the practical needs of British manufacturers </li>
+  <li><a href="https://www.gov.uk/government/publications">publications</a></li>
+  <li><a href="https://www.gov.uk/government/announcements">announcements</a></li>
+  <li><a href="https://www.gov.uk/search?tab=government-results&amp;organisation=department-for-business-innovation-skills&amp;sort=&amp;q=speech">ministerial speeches</a></li>
+</ul>
+<h2 id="open-data-and-datasets">Open Data and Datasets</h2>
+
+<p>The <a rel="external" href="http://www.data.gov.uk/library/bis-open-data-strategy">BIS Open Data Strategy</a> sets out the context and background to our drive to greater transparency and open data.</p>
+
+<p>Datasets published by BIS can be found on <a rel="external" href="http://data.gov.uk/publisher/department-for-business-innovation-and-skills?publisher=department-for-business-innovation-and-skills">data.gov.uk</a></p>
+
+<h2 id="requesting-information">Requesting information</h2>
+
+<p>If you cannot find what you want through this scheme, or otherwise on our website, you may make a request to us under the FOI Act or the Environmental Information Regulations 2004 (EIR).</p>
+
+<p>If you would like to request information under the FOI Act or EIR please email your request to <a href="mailto:foi.requests@bis.gsi.gov.uk">foi.requests@bis.gsi.gov.uk</a></p>
+
+<p>Alternatively you can write to us at:</p>
+
+<div class="address"><div class="adr org fn"><p>
+
+Information Rights Unit 
+<br/>Department for Business, Innovation and Skills
+<br/>1 Victoria Street, 
+<br/>London SW1H OET 
+<br/></p></div></div>
+
+<p>Please be specific about the information you want, as this will help us to find it for you.</p>
+
+<h3 id="feedback-and-complaints-about-the-scheme">Feedback and complaints about the scheme</h3>
+
+<p>We want our publication scheme to meet the needs of our customers and stakeholders. Suggestions for particular classes of information to which we might in future commit to publishing under the scheme will be welcomed. Any comments on or complaints about the scheme should be sent to the Information Rights Unit at the contact details above.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+      
+    </div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/organisations/department-for-business-innovation-skills/about/publication-scheme"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value="bis"/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

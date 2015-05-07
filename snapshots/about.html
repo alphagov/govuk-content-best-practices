@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="organisations-about organisation-page">
+      
+<div class="organisation department-of-health department-of-health-brand-colour ministerial-department" id="organisation_12">
+  <article id="what-we-do"><div class="block-1">
+      <div class="inner-block">
+        
+<header class="page-header"><div class="logo">
+    <h1><span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-large"><span><a href="/government/organisations/department-of-health">Department<br/>of Health</a></span></span></h1>
+
+  </div>
+
+  
+</header><div class="contextual-info js-stick-at-top-when-scrolling">
+          <nav><h1>Contents</h1>
+            <ol>
+<li><a href="#what-we-do">What we do</a></li>
+                  <li><a href="#our-responsibilities">Our responsibilities</a></li>
+                  <li><a href="#our-priorities">Our priorities</a></li>
+                  <li><a href="#who-we-are">Who we are</a></li>
+                  <li><a href="#partner-organisations-and-agencies-including-contact-information">Partner organisations and agencies including contact information</a></li>
+                <li><a href="#corporate-info">Corporate information</a></li>
+                <li><a href="#corporate-reports">Corporate reports</a></li>
+            </ol></nav>
+</div>
+      </div>
+    </div>
+      <div class="block-2">
+        <div class="inner-block">
+          <p class="homepage-link">
+            <a href="/government/organisations/department-of-health">Department of Health homepage</a>
+</p>          <aside class="organisation-top-tasks"/><h1 class="main">About us</h1>
+            <div class="body">
+              <div class="govspeak">
+                <h2 id="what-we-do">What we do</h2>
+                <p class="description">
+                  The Department of Health (DH) helps people to live better for longer. We lead, shape and fund health and care in England, making sure people have the support, care and treatment they need, with the compassion, respect and dignity they deserve. 
+                </p>
+              </div>
+              <div class="govspeak">
+<h2 id="our-responsibilities">Our responsibilities</h2>
+
+<ul>
+<li>
+    <p>we lead across health and care by creating national policies and legislation, providing the long-term vision and ambition to meet current and future challenges, putting health and care at the heart of government and being a global leader in health and care policy</p>
+  </li>
+  <li>
+    <p>we support the integrity of the system by providing funding, assuring the delivery and continuity of services and accounting to Parliament in a way that represents the best interests of the patient, public and taxpayer.</p>
+  </li>
+  <li>
+    <p>we champion innovation and improvement by supporting research and technology, promoting honesty, openness and transparency, and instilling a culture that values compassion, dignity and the highest quality of care above everything</p>
+  </li>
+  <li>
+    <p>above all, <abbr title="The Department of Health">DH</abbr> encourages staff in every health and care organisation, including our own, to understand and learn from people&#x2019;s experience of health and care and to apply this to everything we do</p>
+  </li>
+</ul>
+<h2 id="our-priorities">Our priorities</h2>
+
+<p>Our priorities for 2014 to 2015 are:</p>
+
+<div class="call-to-action">
+<p>Living and ageing well: helping people live healthier lives, making this country the best place in the world in which to grow old</p>
+</div>
+
+<p>Our priorities are preventing disease and poor health, improving care for people over 75, reforming social care, integrating health and care, and improving care for people with dementia</p>
+
+<div class="call-to-action">
+<p>Caring better: raising standards in health and care, ensuring everyone is treated with compassion and respect</p>
+</div>
+
+<p>Our priorities are improving the quality of care and the use of technology, encouraging greater openness and taking significant steps towards parity of esteem between mental and physical health</p>
+
+<div class="call-to-action">
+<p>Preparing for the future: making the right decisions today so that the health and care system can meet the needs of people in the future</p>
+</div>
+
+<p>Our priorities are ensuring the long-term sustainability of the system by maintaining quality, access and financial performance, working more efficiently and investing in research and innovation</p>
+
+<h2 id="who-we-are">Who we are</h2>
+
+<p><abbr title="The Department of Health">DH</abbr> is a ministerial department, supported by 23 agencies and public bodies. The department employs 2,160 staff who work in locations across the country. </p>
+
+<h2 id="partner-organisations-and-agencies-including-contact-information">Partner organisations and agencies including contact information</h2>
+
+<p><a href="https://www.gov.uk/government/publications/how-to-contact-department-of-health-arms-length-bodies">Find out more about the department&#x2019;s partner organisations and agencies, also known as arm&#x2019;s length bodies.</a> </p>
+
+<p>This page includes contact information and a list of members of the executive boards. </p>
+</div>
+            </div>
+            <section class="corporate-information" id="corporate-info"><h1>Corporate information</h1>
+  <div class="corporate-information-block">
+      <h2>Access our information</h2>
+    <nav class="group sub_navigation" role="navigation"><ul>
+<li><a href="/government/organisations/department-of-health/about/complaints-procedure">Complaints procedure</a></li>
+          <li><a href="/government/organisations/department-of-health/about/media-enquiries">Media enquiries</a></li>
+          <li><a href="/government/organisations/department-of-health/about/equality-and-diversity">Equality and diversity</a></li>
+          <li><a href="/government/organisations/department-of-health/about/statistics">Statistics at DH</a></li>
+          <li><a href="/government/organisations/department-of-health/about/our-governance">Our governance</a></li>
+          <li><a href="/government/publications?departments%5B%5D=department-of-health&amp;publication_type=transparency-data">Transparency data</a></li>
+      </ul></nav>
+</div>
+    <div class="corporate-information-block">
+      <h2>Jobs and contracts</h2>
+      <nav class="group sub_navigation" role="navigation"><ul>
+<li><a href="/government/organisations/department-of-health/about/procurement">Procurement at DH</a></li>
+            <li><a href="/government/organisations/department-of-health/about/recruitment">Working for DH</a></li>
+          <li><a href="https://www.civilservicejobs.service.gov.uk/csr" rel="external">Jobs</a></li>
+        </ul></nav>
+</div>
+  <p class="information">
+      Read about the types of information we routinely publish in our <a href="/government/organisations/department-of-health/about/publication-scheme">Publication scheme</a>.
+      Our <a href="/government/organisations/department-of-health/about/personal-information-charter">Personal information charter</a> explains how we treat your personal information.
+  </p>
+</section><section class="corporate-publications" id="corporate-reports"><h1>Corporate reports</h1>
+              <ul>
+<li class="publication item" id="publication_492781">
+                    <h3 class="title"><a href="/government/publications/how-to-contact-department-of-health-arms-length-bodies">The Department of Health's agencies and partner organisations</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2015-04-28T16:25:37+01:00">28 April 2015</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_463194">
+                    <h3 class="title"><a href="/government/publications/department-of-health-civil-service-people-survey">Department of Health: Civil Service people survey</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2015-03-11T17:24:29+00:00">11 March 2015</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_454991">
+                    <h3 class="title"><a href="/government/publications/workforce-equality-information-2015">Workforce Equality information 2015</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2015-01-30T10:04:00+00:00">30 January 2015</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_456180">
+                    <h3 class="title"><a href="/government/publications/department-of-health-compliance-with-its-equality-duty-2014">Department of Health: compliance with its equality duty 2014</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2015-01-30T10:04:00+00:00">30 January 2015</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_438588">
+                    <h3 class="title"><a href="/government/publications/department-of-health-mid-year-report-2014-to-2015">Department of Health mid-year report 2014 to 2015</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-12-18T16:17:41+00:00">18 December 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_398998">
+                    <h3 class="title"><a href="/government/publications/dh-audit-and-risk-committee-annual-reports">DH Audit and Risk Committee: annual reports</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-10-08T13:54:07+01:00"> 8 October 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_369387">
+                    <h3 class="title"><a href="/government/publications/healthcare-uk-review-of-2013-14-and-business-plan-for-2014-15">Healthcare UK review of 2013-14 and business plan for 2014-15</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-08-07T12:11:35+01:00"> 7 August 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_373570">
+                    <h3 class="title"><a href="/government/publications/department-of-health-annual-report-and-accounts-2013-to-2014">Department of Health annual report and accounts 2013 to 2014</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-07-22T12:36:00+01:00">22 July 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_364884">
+                    <h3 class="title"><a href="/government/publications/nhs-england-assessment-of-performance">NHS England: assessment of performance</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-07-22T11:29:00+01:00">22 July 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_357298">
+                    <h3 class="title"><a href="/government/publications/monitor-and-the-department-of-health-framework-agreement">Monitor and the Department of Health: framework agreement</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-07-09T10:11:32+01:00"> 9 July 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_347016">
+                    <h3 class="title"><a href="/government/publications/department-of-health-corporate-plan-2014-to-2015">Department of Health corporate plan 2014 to 2015</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-06-16T17:37:00+01:00">16 June 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_408815">
+                    <h3 class="title"><a href="/government/publications/outline-proposals-on-data-security-for-care-sector">Outline proposals on data security for care sector</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-06-03T09:30:00+01:00"> 3 June 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_408822">
+                    <h3 class="title"><a href="/government/publications/department-of-health-hscic-framework-agreement">Department of Health HSCIC Framework Agreement</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-04-16T09:30:00+01:00">16 April 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_322336">
+                    <h3 class="title"><a href="/government/publications/department-of-health-improvement-plan-april-2014">Department of Health Improvement Plan: April 2014</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-04-10T17:24:00+01:00">10 April 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_294009">
+                    <h3 class="title"><a href="/government/publications/department-of-healths-compliance-with-its-equality-duty">Department of Health&#x2019;s compliance with its equality duty</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2014-01-31T15:15:00+00:00">31 January 2014</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_244728">
+                    <h3 class="title"><a href="/government/publications/the-quarter-quarter-1-2012-13">The quarter: updates on NHS performance 2012 to 2013</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-10-31T10:00:02+00:00">31 October 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_234954">
+                    <h3 class="title"><a href="/government/publications/department-of-health-regulations-impact-on-business">Department of Health regulations: impact on business</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-09-03T11:09:00+01:00"> 3 September 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_279617">
+                    <h3 class="title"><a href="/government/publications/department-of-health-annual-report-and-accounts-2012-to-2013">Department of Health annual report and accounts 2012 to 2013</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-08-15T16:51:00+01:00">15 August 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_221825">
+                    <h3 class="title"><a href="/government/publications/helping-people-live-better-for-longer">Department of Health: role and purpose</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-19T15:38:00+01:00">19 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_219896">
+                    <h3 class="title"><a href="/government/publications/health-and-care-transition-programme-plan">Health and care transition programme plan</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-18T16:00:37+01:00">18 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_213689">
+                    <h3 class="title"><a href="/government/publications/grants-to-charities-by-department-of-health">Grants to charities by Department of Health</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-17T10:23:00+01:00">17 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_213403">
+                    <h3 class="title"><a href="/government/publications/response-to-the-confidential-inquiry-into-learning-disability">Response to the Confidential Inquiry into learning disability</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-12T09:30:00+01:00">12 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214028">
+                    <h3 class="title"><a href="/government/publications/six-lives-department-of-health-second-progress-report">Six Lives &#x2013; Department of Health second progress report</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-12T09:30:00+01:00">12 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_213146">
+                    <h3 class="title"><a href="/government/publications/civil-service-reform-one-year-on-department-of-health">Civil Service reform: one year on &#x2013; Department of Health</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-10T09:00:00+01:00">10 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_221849">
+                    <h3 class="title"><a href="/government/publications/department-of-health-business-plan-2013-to-2015">Department of Health business plan 2013 to 2015</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-07-08T11:57:00+01:00"> 8 July 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_201980">
+                    <h3 class="title"><a href="/government/publications/antibiotic-resistance-a-threat-to-global-health-security">Antibiotic Resistance - A Threat to Global Health Security</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-05-30T15:00:00+01:00">30 May 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_189594">
+                    <h3 class="title"><a href="/government/publications/innovation-excellence-and-strategic-development-fund-new-awards-2013-to-2014">Innovation, Excellence and Strategic Development Fund: new awards 2013 to 2014</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-04-25T09:59:00+01:00">25 April 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_177668">
+                    <h3 class="title"><a href="/government/publications/department-of-health-equality-objectives-2012-to-2016-progress-update">Department of Health Equality Objectives 2012 to 2016: progress update</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-04-05T01:00:00+01:00"> 5 April 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_147336">
+                    <h3 class="title"><a href="/government/publications/results-of-the-2012-nhs-staff-survey-published">Results of the 2012 NHS staff survey published</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-02-28T00:00:00+00:00">28 February 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215541">
+                    <h3 class="title"><a href="/government/publications/independent-mental-capacity-advocacy-service-fifth-annual-report">Independent Mental Capacity Advocacy service &#x2013; fifth annual report</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-02-18T00:00:00+00:00">18 February 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214605">
+                    <h3 class="title"><a href="/government/publications/department-of-health-audit-and-risk-committee-annual-report-2011-to-2012">Department of Health audit and risk committee: annual report 2011 to 2012</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2013-01-21T00:00:00+00:00">21 January 2013</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214531">
+                    <h3 class="title"><a href="/government/publications/further-evidence-for-ddrb-2013-general-medical-practitioners-and-general-dental-practitioners">Further evidence for DDRB 2013 (general medical practitioners and general dental practitioners)</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-11-20T00:00:00+00:00">20 November 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214556">
+                    <h3 class="title"><a href="/government/publications/changes-to-nursing-and-midwifery-council-constitution">Changes to nursing and midwifery council constitution</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-11-09T00:00:00+00:00"> 9 November 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214691">
+                    <h3 class="title"><a href="/government/publications/department-of-health-structural-reform-plan-progress-reports-published-in-2012">Department of Health Structural Reform Plan: progress reports published in 2012</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-10-31T00:00:00+00:00">31 October 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_279622">
+                    <h3 class="title"><a href="/government/publications/department-of-health-annual-report-and-accounts-for-2011-to-2012-published">Department of Health annual report and accounts for 2011 to 2012</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-10-18T01:00:00+01:00">18 October 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_214680">
+                    <h3 class="title"><a href="/government/publications/reporting-against-the-department-of-health-corporate-business-performance-april-to-june-2012">Reporting against the Department of Health corporate business performance: April to June 2012</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-08-29T01:00:00+01:00">29 August 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_391742">
+                    <h3 class="title"><a href="/government/publications/the-year-2011-12-nhs-chief-executive-s-annual-report">NHS Chief Executive&#x2019;s annual report 2011 to 2012</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-06-21T01:00:00+01:00">21 June 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215587">
+                    <h3 class="title"><a href="/government/publications/treasury-review-of-tax-arrangements-of-public-sector-appointees-department-of-health-results">Treasury Review of Tax Arrangements of Public Sector Appointees: Department of Health Results</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-05-23T01:00:00+01:00">23 May 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215663">
+                    <h3 class="title"><a href="/government/publications/department-of-health-estimates-memorandum-2011-12-supplementary-estimate">Department of Health Estimates Memorandum 2011-12 Supplementary Estimate.</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-02-09T00:00:00+00:00"> 9 February 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215720">
+                    <h3 class="title"><a href="/government/publications/national-patient-safety-agency-amendment-no-3-directions-2011">National Patient Safety Agency (Amendment No.3) Directions 2011</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2012-01-04T00:00:00+00:00"> 4 January 2012</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215705">
+                    <h3 class="title"><a href="/government/publications/national-oversight-group-annual-report-2010-11">National Oversight Group Annual Report 2010-11</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2011-12-23T00:00:00+00:00">23 December 2011</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215806">
+                    <h3 class="title"><a href="/government/publications/the-quarter-quarter-1-2011-12">The Quarter, quarter 1 2011/12</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2011-09-30T01:00:00+01:00">30 September 2011</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_215814">
+                    <h3 class="title"><a href="/government/publications/dh-second-statement-of-new-regulation-snr2">DH Second Statement of New Regulation (SNR2)</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2011-09-26T01:00:00+01:00">26 September 2011</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_279620">
+                    <h3 class="title"><a href="/government/publications/department-of-health-annual-report-and-accounts-2010-11">Department of Health annual report and accounts 2010 to 2011</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2011-09-05T01:00:00+01:00"> 5 September 2011</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216036">
+                    <h3 class="title"><a href="/government/publications/annual-hpv-vaccine-coverage-in-england-in-2009-2010">Annual HPV vaccine coverage in England in 2009/2010</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2011-01-27T00:00:00+00:00">27 January 2011</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216527">
+                    <h3 class="title"><a href="/government/publications/department-of-health-public-bodies-2010">Department of Health Public Bodies 2010</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-12-23T00:00:00+00:00">23 December 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216113">
+                    <h3 class="title"><a href="/government/publications/mortality-monitoring-bulletin-infant-mortality-inequalities-update-to-include-data-for-2009">Mortality Monitoring Bulletin (infant mortality, inequalities): update to include data for 2009</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-12-08T00:00:00+00:00"> 8 December 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216106">
+                    <h3 class="title"><a href="/government/publications/research-and-development-work-relating-to-assistive-technology-2009-10">Research and development work relating to assistive technology 2009-10</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-11-30T00:00:00+00:00">30 November 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216111">
+                    <h3 class="title"><a href="/government/publications/national-oversight-group-for-high-security-health-services-annual-report-2009-to-2010">National oversight group for high security health services: annual report 2009 to 2010</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-11-26T00:00:00+00:00">26 November 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_279060">
+                    <h3 class="title"><a href="/government/publications/departmental-board-annual-reports">Departmental Board: Annual Reports</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-08-12T01:00:00+01:00">12 August 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_216228">
+                    <h3 class="title"><a href="/government/publications/report-on-the-national-patient-choice-survey-england-february-2010">Report on the National Patient Choice Survey, England - February 2010</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2010-06-30T01:00:00+01:00">30 June 2010</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_279630">
+                    <h3 class="title"><a href="/government/publications/department-of-health-resource-accounts-2008-09">Department of Health resource accounts 2008 to 2009</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2009-07-14T01:00:00+01:00">14 July 2009</abbr>
+                    </span>
+</li>                  <li class="publication item" id="publication_402683">
+                    <h3 class="title"><a href="/government/publications/department-of-health-autumn-performance-report-2006">Department of Health autumn performance report 2006</a></h3>
+                    <span class="metadata">
+                      <abbr class="date" title="2006-12-11T00:00:00+00:00">11 December 2006</abbr>
+                    </span>
+</li>              </ul></section>
+</div>
+      </div>
+  </article>
+</div>
+      
+    </div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/organisations/department-of-health/about"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value="dh"/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

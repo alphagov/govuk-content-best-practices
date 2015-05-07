@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="document-collection-page">
+      
+<article class="document_collection documentcollection" id="document_collection_437821"><header class="block headings-block"><div class="inner-block floated-children">
+      <div class="heading-with-extra">
+  <div class="inner-heading">
+    <p class="type">Collection</p>
+    <h1>Academy for Justice Commissioning events</h1>
+  </div>
+</div>
+
+
+
+
+<div class="heading-extra">
+  <div class="inner-heading">
+    
+    
+  </div>
+</div>
+<aside class="meta metadata-list"><div class="inner-heading">
+    <dl>
+<dt>From:</dt>
+        <dd class="js-hide-extra-metadata"><a class="organisation-link" href="/government/organisations/academy-for-justice-commissioning">Academy for Justice Commissioning</a></dd>
+
+      
+
+        <dt>First published:</dt>
+  <dd><abbr class="date" title="2014-11-05T11:18:00+00:00"> 5 November 2014</abbr></dd>
+
+
+
+    </dl>
+</div>
+</aside>
+</div>
+  </header><div class="block summary">
+      <div class="inner-block">
+        <p>Details of the Academy for Justice Commissioning&#x2019;s events programme and presentations from previous events.</p>
+      </div>
+    </div>
+
+  <div class="block-2 ">
+    <div class="inner-block">
+      <div class="contextual-info js-stick-at-top-when-scrolling">
+        <h1>Contents</h1>
+        <ol class="dash-list">
+<li><a href="#evening-seminars-coming-up">Evening seminars: coming up</a></li>
+            <li><a href="#past-seminars">Past seminars</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+        </ol>
+</div>
+    </div>
+  </div>
+
+  <div class="block-3">
+    <div class="inner-block">
+      <section id="document_collection" class="group"><div class="description">
+            <div class="govspeak">
+<div class="call-to-action">
+<p>Follow <a rel="external" href="https://twitter.com/Academyjustice">@academyjustice</a> for news about events.</p>
+</div>
+
+<p>Our events programme includes monthly evening seminars with guest speakers, which take place in Bristol, London and Manchester.</p>
+
+<p>We also hold a commissioning-themed annual conference.</p>
+
+<p>All our events are free to attend and they offer the opportunity to network and share best practice with your commissioning colleagues.</p>
+
+<p>You must be a member of the Academy for Justice Commissioning to attend these events. Membership is free. Read more about <a href="https://www.gov.uk/government/organisations/academy-for-justice-commissioning/about/membership">how to become a member</a>.</p>
+
+<div class="call-to-action">
+<p>To register for an event, please email your details to <a href="mailto:academy@noms.gsi.gov.uk">academy@noms.gsi.gov.uk</a>.</p>
+</div>
+</div>
+          </div>
+
+          <div class="editions">
+            <h2 id="evening-seminars-coming-up">Evening seminars: coming up</h2>
+            <ol class="document-list">
+<li class="news_article document-row" id="news_article_481593">
+                  <h3><a href="/government/news/london-evening-seminar-mental-health-treatment-requirements-14-jan-2015">Previous Seminar Presentation: Offender Personality Disorder Pathway Programme (Mar 2015)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2015-03-12T13:45:00+00:00">12 March 2015</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>            </ol>
+</div>
+          <div class="editions">
+            <h2 id="past-seminars">Past seminars</h2>
+              <div class="group-body">
+                <div class="govspeak">
+<p>An overview of each seminar with:</p>
+
+<ul>
+<li>details of speakers</li>
+  <li>presentations</li>
+  <li>videos</li>
+</ul>
+</div>
+              </div>
+            <ol class="document-list">
+<li class="news_article document-row" id="news_article_488432">
+                  <h3><a href="/government/news/seminar-rediscovering-addiction-and-recovery-to-reduce-offending-11-dec-2014-manchester">Previous seminar presentation: rediscovering addiction and recovery to reduce offending (11 Dec 2014, Manchester)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-12-12T00:00:00+00:00">12 December 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_415016">
+                  <h3><a href="/government/news/seminar-sharing-information-to-transform-public-services-3-dec-2014-london">Seminar: sharing information to transform public services (3 Dec 2014, London)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-11-01T00:00:00+00:00"> 1 November 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_427704">
+                  <h3><a href="/government/news/seminar-commissioning-to-transform-liaison-and-diversion-services-5-nov-2014">Previous Seminar Presentation: commissioning to transform liaison and diversion services (5 Nov 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-11-06T00:00:00+00:00"> 6 November 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_427712">
+                  <h3><a href="/government/news/seminar-challenge-and-change-working-together-to-support-health-and-care-in-the-south-west-3-nov-2014">Previous Bristol Seminar Presentation: Challenge and change - working together to support health and care in the South West (3 Nov 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-11-04T00:00:00+00:00"> 4 November 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_406473">
+                  <h3><a href="/government/news/seminar-offenders-and-welfare-reform-21-oct-2014">Seminar: offenders and welfare reform (21 Oct 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-10-22T00:00:00+01:00">22 October 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_405261">
+                  <h3><a href="/government/news/seminar-transforming-the-lives-of-troubled-families-the-manchester-evaluation-6-oct-2014">Seminar: transforming the lives of troubled families - the Manchester evaluation (6 Oct 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-10-07T00:00:00+01:00"> 7 October 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_406491">
+                  <h3><a href="/government/news/seminar-commissioning-street-triage-services-29-sep-2014">Seminar: commissioning street triage services (29 Sep 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-09-30T00:00:00+01:00">30 September 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_406482">
+                  <h3><a href="/government/news/seminar-offenders-and-welfare-reform-21-july-2014">Seminar: offenders and welfare reform (21 July 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-07-22T00:00:00+01:00">22 July 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_406525">
+                  <h3><a href="/government/news/seminar-commissioning-to-transform-rehabilitation-17-june-2014">Seminar: commissioning to transform rehabilitation (17 June 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-06-18T00:00:00+01:00">18 June 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_406622">
+                  <h3><a href="/government/news/seminar-women-and-the-criminal-justice-system-15-may-2014">Seminar: women and the criminal justice system (15 May 2014)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2014-05-16T00:00:00+01:00">16 May 2014</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>            </ol>
+</div>
+          <div class="editions">
+            <h2 id="conferences">Conferences</h2>
+            <ol class="document-list">
+<li class="news_article document-row" id="news_article_488471">
+                  <h3><a href="/government/news/conference-intelligent-commissioning-2020-vision-2015">Slidepack: Manchester Conference: intelligent commissioning - 20/20 vision (2015)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2015-04-02T11:10:00+01:00"> 2 April 2015</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>                <li class="news_article document-row" id="news_article_405123">
+                  <h3><a href="/government/news/conference-innovative-commissioning-2013">Conference: innovative commissioning (2013)</a></h3>
+                  <ul class="attributes">
+<li class="date"><abbr class="public_timestamp" title="2013-10-31T00:00:00+00:00">31 October 2013</abbr></li>
+                    <li class="display-type attribute">News story</li>
+                  </ul>
+</li>            </ol>
+</div>
+      </section>
+</div>
+  </div>
+  <div class="inner-block">
+    <div class="document-footer-meta js-footer">
+  <div id="history" class="history">
+    <dl class="primary-metadata">
+<dt>Published:</dt>
+        <dd><abbr class="date" title="2014-11-05T11:18:00+00:00"> 5 November 2014</abbr></dd>
+    </dl>
+</div>
+  <div class="links">
+    <dl class="primary-metadata">
+<dt>From:</dt>
+          <dd class="from"><a class="organisation-link" href="/government/organisations/academy-for-justice-commissioning">Academy for Justice Commissioning</a></dd>
+
+    </dl>
+</div>
+</div>
+
+  </div>
+
+</article>
+</div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/collections/academy-for-justice-commissioning-events"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value=""/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

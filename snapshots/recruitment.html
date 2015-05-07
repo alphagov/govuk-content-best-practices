@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="corporate-information-pages-show organisation-page">
+      
+<div class="organisation environment-agency department-for-environment-food-rural-affairs-brand-colour executive-non-departmental-public-body" id="organisation_199">
+  <article><div class="block-1">
+      <div class="inner-block">
+        
+<header class="page-header"><div class="logo">
+    <h1><a href="/government/organisations/environment-agency"><img alt="Environment Agency" class="organisation-logo-custom" src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/organisation/logo/199/EAlogo.png"/></a></h1>
+
+  </div>
+
+  
+</header><nav class="js-stick-at-top-when-scrolling"><h1>Contents</h1>
+    <ol class="dash-list">
+<li><a href="#apply-for-a-job">Apply for a job</a></li>
+        <li><a href="#what-we-offer-you">What we offer you</a></li>
+        <li><a href="#entry-level-programmes">Entry level programmes</a></li>
+        <li><a href="#volunteering-opportunities">Volunteering opportunities</a></li>
+    </ol></nav>
+</div>
+    </div>
+    <div class="block-2">
+      <div class="inner-block">
+        
+        <p class="homepage-link">
+          <a href="/government/organisations/environment-agency">Environment Agency homepage</a>
+</p>        <h1 class="main">Working for EA</h1>
+        <p class="description">
+          How to apply for jobs, workplace benefits and entry level programmes at the Environment Agency (EA).&#xD;
+
+        </p>
+        <div class="body">
+          <div class="govspeak">
+<h2 id="apply-for-a-job">Apply for a job</h2>
+
+<p>You can search for a job, including entry level programmes, on <a rel="external" href="https://ig24.i-grasp.com/fe/tpl_ea01.asp?newms=hm">our recruitment system</a>.</p>
+
+<p>We employ around 10,600 people throughout England in a variety of roles including:</p>
+
+<ul>
+<li>scientists</li>
+  <li>geologists</li>
+  <li>engineers</li>
+  <li>project managers</li>
+  <li>planners</li>
+  <li>hydrologists</li>
+  <li>environment officers</li>
+  <li>graduates</li>
+  <li>nuclear assessors</li>
+  <li>policy advisors</li>
+  <li>enforcement officers</li>
+  <li>senior managers</li>
+  <li>support staff</li>
+</ul>
+<h2 id="what-we-offer-you">What we offer you</h2>
+
+<p>There are a range of benefits available when you work with us.</p>
+
+<h3 id="pay-and-pension">Pay and pension</h3>
+
+<p>We offer:</p>
+
+<ul>
+<li>a competitive salary</li>
+  <li>a generous career average pension scheme</li>
+</ul>
+<h3 id="enhanced-benefits">Enhanced benefits</h3>
+
+<p>These include:</p>
+
+<ul>
+<li>holiday allowance related to grade and length of service, rising from 25 or 27 days to 30 days per year, plus 8 statutory public and bank holidays (pro-rata for part-time employees) </li>
+  <li>maternity, paternity and adoption leave scheme</li>
+  <li>leave for examinations, approved studies, public duties, special / reserve forces, environmental work, trade union representatives and health and safety representatives</li>
+  <li>a range of flexible working options, including flexi-time - these depend on business needs, but our aim is to help you achieve a positive work-life balance</li>
+</ul>
+<h3 id="health-and-wellbeing">Health and Wellbeing</h3>
+
+<p>We offer:</p>
+
+<ul>
+<li>occupational health benefits, including counselling and advisory service, eye care service and access to Help (our employee assistance service)</li>
+  <li>interest free loans for season tickets and / or bicycles and safety equipment</li>
+  <li>childcare vouchers scheme</li>
+  <li>subsidised sports and social clubs</li>
+  <li>many other rewards, including shopping, leisure, fitness, finance and travel benefits and discounts</li>
+</ul>
+<h2 id="entry-level-programmes">Entry level programmes</h2>
+
+<p>We offer a variety of entry level schemes, including a graduate programme, foundation degree, apprenticeships and placements.</p>
+
+<p><span class="attachment inline" id="attachment_869084">
+  <a href="/government/uploads/system/uploads/attachment_data/file/311850/Recruitment_Process_Entry_Level_Schemes.pdf">Recruitment process for placements, apprenticeships and graduate programmes</a>
+  (<span class="type"><abbr title="Portable Document Format">PDF</abbr></span>, <span class="file-size">177KB</span>, <span class="page-length">2 pages</span>)
+</span></p>
+
+<h3 id="civil-engineering-graduate-programme">Civil engineering graduate programme</h3>
+<p>We&#x2019;re looking for graduates with a Masters degree in civil engineering (or equivalent) to join our flood and coastal erosion risk engineering graduate programme. This is a 3 to 4-year programme. </p>
+
+<p>We&#x2019;ll provide training for you under agreement with the Institution of Civil Engineers (ICE). Once you have the full range of skills, attributes and capabilities you&#x2019;ll take your chartered professional review. If you pass, you&#x2019;ll become a flood and coastal risk engineer with civil engineering status.</p>
+
+<p>Your degree or experience must satisfy the requirements of becoming a chartered engineer.</p>
+
+<p>We are not recruiting to our graduate programme in 2014, if you would like to register your interest for the 2015 scheme please email <a href="mailto:gradengineers@environment-agency.gov.uk">gradengineers@environment-agency.gov.uk</a>.</p>
+
+<h3 id="river-and-coastal-engineering-foundation-degree">River and coastal engineering foundation degree</h3>
+
+<p>This is a 2-year course of work-based learning with full-time university study.</p>
+
+<p>We&#x2019;ll pay you up to &#xA3;15,000 during your work placement (maximum of &#xA3;3,000 during your first year). This is free from tax and National Insurance contributions. We&#x2019;ll also pay your tuition fees and textbooks in both years, and your accommodation during your study weeks in the second year. Your first year will be spent in full-time study, and your second at an <abbr title="Environment Agency">EA</abbr> or Local Authority office.</p>
+
+<p>The University of the West of England (UWE) is responsible for the entire application process. You can find out the course details, including entry requirements, download a candidate pack and apply on the <a rel="external" href="http://courses.uwe.ac.uk/H221/2015">UWE website</a>.</p>
+
+<h3 id="finance-apprenticeships">Finance apprenticeships</h3>
+
+<p>The finance apprenticeship combines training in the workplace with studying towards the Association of Chartered Certified Accountants (ACCA) Intermediate Certificate in Financial and Management Accounting.</p>
+
+<p>Your study course will be provided and supported by one of the leading financial training organisations. Salary, tuition and course fees, and equipment will be provided by the <abbr title="Environment Agency">EA</abbr>.</p>
+
+<p>We advertise finance apprenticeships on <a rel="external" href="https://ig24.i-grasp.com/fe/tpl_ea01.asp">our recruitment system</a>, where you can register for email alerts.</p>
+
+<h3 id="geomatics-placement">Geomatics placement</h3>
+<p>This is a year-long placement for students who are in their penultimate year of an undergraduate degree programme. The degree must include content on remote sensing and/or Geographic Information Systems (GIS). It is for students committed to a career in geomatics and/or the environmental sector.</p>
+
+<p>Your placement year will be spent with our small team in our Bath office where you&#x2019;ll be supported by your team leader, a geomatics expert, and an independent mentor. You&#x2019;ll gain valid and relevant exposure to a wide range of geomatics activities. We offer a competitive package with a range of benefits and the opportunity to make a real difference to the environment.</p>
+
+<p>You must gain approval from your university before you apply for this placement. To register, email <a href="mailto:geomaticsinternships@environment-agency.gov.uk">geomaticsinternships@environment-agency.gov.uk</a>.</p>
+
+<h2 id="volunteering-opportunities">Volunteering opportunities</h2>
+
+<h3 id="river-thames-volunteer-assistant-lock-keepers">River Thames Volunteer Assistant Lock Keepers</h3>
+
+<p>We are recruiting volunteers to help our staff on the River Thames.  </p>
+
+<p>We are responsible for 45 lock sites on the river, which are used by boaters throughout the year. During the summer months we see an increase in boat traffic as more people enjoy all the Thames has to offer. As a River Thames Volunteer Assistant Lock Keeper, you will help with the safe passage of boats through our locks.</p>
+
+<p>Working with an experienced lock and weir keeper, you will help in the day-to-day management of a lock site and give information, guidance and advice to river users as they pass through.  We will provide full training and uniform to successful applicants.</p>
+
+<p>If you would like to find out more about volunteering on the Thames, please contact the River Thames Volunteer team on 01491 828360 or email <a href="mailto:thames.volunteers@environment-agency.gov.uk">thames.volunteers@environment-agency.gov.uk</a>.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+      
+    </div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/organisations/environment-agency/about/recruitment"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value="ea"/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

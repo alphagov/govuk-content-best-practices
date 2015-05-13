@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="wrapper" class="">
+      
+        
+<main id="content" role="main" class="group search"><form action="/search" method="get" accept-charset="utf-8" role="search" class="js-live-search-form">
+    <div class="search-header">
+      
+      
+      
+      <div class="searchfield">
+        <fieldset class="search-input">
+<label for="search-main">
+              <h1>Search results for <span class="visuallyhidden">&#x201C;DH equality and diversity&#x201D;</span>
+</h1>
+          </label>
+          <input type="search" name="q" value="DH equality and diversity" id="search-main"/>
+</fieldset>
+<fieldset class="search-submit">
+<button type="submit" class="button">Search</button>
+        </fieldset>
+</div>
+    </div>
+
+    <div id="results" class="js-live-search-results-block">
+      <div aria-live="assertive" class="js-aria-live-count visuallyhidden">830 found</div>
+        <div class="filter-form">
+    <div class="inner-block">
+      <p class="info">Filter by:</p>
+
+        <div class="filter checkbox-filter js-openable-filter closed" tabindex="0">
+          <div class="head">
+            <span class="legend">Organisations</span>
+            <div class="controls">
+              <a class="clear-selected  js-hidden">Remove filters</a>
+              <div class="toggle"/>
+            </div>
+          </div>
+          <div class="checkbox-container" id="organisations-filter">
+            <ul>
+<li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-of-health" id="department-of-health"/><label for="department-of-health">Department of Health (123)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-business-innovation-skills" id="department-for-business-innovation-skills"/><label for="department-for-business-innovation-skills">Department for Business, Innovation &amp; Skills (79)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="cabinet-office" id="cabinet-office"/><label for="cabinet-office">Cabinet Office (73)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="home-office" id="home-office"/><label for="home-office">Home Office (73)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="foreign-commonwealth-office" id="foreign-commonwealth-office"/><label for="foreign-commonwealth-office">Foreign &amp; Commonwealth Office (60)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-education" id="department-for-education"/><label for="department-for-education">Department for Education (41)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-international-development" id="department-for-international-development"/><label for="department-for-international-development">Department for International Development (36)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-work-pensions" id="department-for-work-pensions"/><label for="department-for-work-pensions">Department for Work and Pensions (34)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-communities-and-local-government" id="department-for-communities-and-local-government"/><label for="department-for-communities-and-local-government">Department for Communities and Local Government (32)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="prime-ministers-office-10-downing-street" id="prime-ministers-office-10-downing-street"/><label for="prime-ministers-office-10-downing-street">Prime Minister's Office, 10 Downing Street (31)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-culture-media-sport" id="department-for-culture-media-sport"/><label for="department-for-culture-media-sport">Department for Culture, Media &amp; Sport (26)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-equalities-office" id="government-equalities-office"/><label for="government-equalities-office">Government Equalities Office   (25)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="ministry-of-defence" id="ministry-of-defence"/><label for="ministry-of-defence">Ministry of Defence (20)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="hm-revenue-customs" id="hm-revenue-customs"/><label for="hm-revenue-customs">HM Revenue &amp; Customs (19)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-of-energy-climate-change" id="department-of-energy-climate-change"/><label for="department-of-energy-climate-change">Department of Energy &amp; Climate Change (18)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-environment-food-rural-affairs" id="department-for-environment-food-rural-affairs"/><label for="department-for-environment-food-rural-affairs">Department for Environment, Food &amp; Rural Affairs (17)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="uk-trade-investment" id="uk-trade-investment"/><label for="uk-trade-investment">UK Trade &amp; Investment (16)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="hm-treasury" id="hm-treasury"/><label for="hm-treasury">HM Treasury (15)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="civil-service" id="civil-service"/><label for="civil-service">Civil Service (11)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="charity-commission" id="charity-commission"/><label for="charity-commission">The Charity Commission (10)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="deputy-prime-ministers-office" id="deputy-prime-ministers-office"/><label for="deputy-prime-ministers-office">Deputy Prime Minister's Office (10)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="ministry-of-justice" id="ministry-of-justice"/><label for="ministry-of-justice">Ministry of Justice (9)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="skills-funding-agency" id="skills-funding-agency"/><label for="skills-funding-agency">Skills Funding Agency (9)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="northern-ireland-office" id="northern-ireland-office"/><label for="northern-ireland-office">Northern Ireland Office (8)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="youth-justice-board-for-england-and-wales" id="youth-justice-board-for-england-and-wales"/><label for="youth-justice-board-for-england-and-wales">Youth Justice Board for England and Wales (8)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="department-for-transport" id="department-for-transport"/><label for="department-for-transport">Department for Transport (7)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-digital-service" id="government-digital-service"/><label for="government-digital-service">Government Digital Service (7)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="public-health-england" id="public-health-england"/><label for="public-health-england">Public Health England (7)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="healthcare-uk" id="healthcare-uk"/><label for="healthcare-uk">Healthcare UK (5)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="regulatory-policy-committee" id="regulatory-policy-committee"/><label for="regulatory-policy-committee">Regulatory Policy Committee (5)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="driver-and-vehicle-licensing-agency" id="driver-and-vehicle-licensing-agency"/><label for="driver-and-vehicle-licensing-agency">Driver and Vehicle Licensing Agency (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="driver-and-vehicle-standards-agency" id="driver-and-vehicle-standards-agency"/><label for="driver-and-vehicle-standards-agency">Driver and Vehicle Standards Agency (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="education-funding-agency" id="education-funding-agency"/><label for="education-funding-agency">Education Funding Agency (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="efficiency-and-reform-group" id="efficiency-and-reform-group"/><label for="efficiency-and-reform-group">Efficiency and Reform Group (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="office-for-disability-issues" id="office-for-disability-issues"/><label for="office-for-disability-issues">Office for Disability Issues (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="rural-payments-agency" id="rural-payments-agency"/><label for="rural-payments-agency">Rural Payments Agency (4)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-legal-department" id="government-legal-department"/><label for="government-legal-department">Government Legal Department (3)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="natural-england" id="natural-england"/><label for="natural-england">Natural England (3)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="scotland-office" id="scotland-office"/><label for="scotland-office">Scotland Office (3)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="treasury-solicitor-s-department" id="treasury-solicitor-s-department"/><label for="treasury-solicitor-s-department">Treasury Solicitor&#x2019;s Department (3)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="wales-office" id="wales-office"/><label for="wales-office">Wales Office (3)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="animal-and-plant-health-agency" id="animal-and-plant-health-agency"/><label for="animal-and-plant-health-agency">Animal and Plant Health Agency (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="attorney-generals-office" id="attorney-generals-office"/><label for="attorney-generals-office">Attorney General's Office (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="civil-service-government-legal-service" id="civil-service-government-legal-service"/><label for="civil-service-government-legal-service">Government Legal Service (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="environment-agency" id="environment-agency"/><label for="environment-agency">Environment Agency (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-office-for-science" id="government-office-for-science"/><label for="government-office-for-science">Government Office for Science (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="health-and-social-care-information-centre" id="health-and-social-care-information-centre"/><label for="health-and-social-care-information-centre">Health and Social Care Information Centre (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="homes-and-communities-agency" id="homes-and-communities-agency"/><label for="homes-and-communities-agency">Homes and Communities Agency (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="intellectual-property-office" id="intellectual-property-office"/><label for="intellectual-property-office">Intellectual Property Office (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="legal-aid-agency" id="legal-aid-agency"/><label for="legal-aid-agency">Legal Aid Agency (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="medical-research-council" id="medical-research-council"/><label for="medical-research-council">Medical Research Council (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="medicines-and-healthcare-products-regulatory-agency" id="medicines-and-healthcare-products-regulatory-agency"/><label for="medicines-and-healthcare-products-regulatory-agency">Medicines and Healthcare Products Regulatory Agency (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="national-security" id="national-security"/><label for="national-security">National security and intelligence (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="office-of-the-parliamentary-counsel" id="office-of-the-parliamentary-counsel"/><label for="office-of-the-parliamentary-counsel">Office of the Parliamentary Counsel (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="ofsted" id="ofsted"/><label for="ofsted">Ofsted (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="olympic-delivery-authority" id="olympic-delivery-authority"/><label for="olympic-delivery-authority">Olympic Delivery Authority (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="open-public-services" id="open-public-services"/><label for="open-public-services">Open Public Services (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="technology-strategy-board" id="technology-strategy-board"/><label for="technology-strategy-board">Technology Strategy Board (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="uk-export-finance" id="uk-export-finance"/><label for="uk-export-finance">UK Export Finance (2)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="animals-in-science-committee" id="animals-in-science-committee"/><label for="animals-in-science-committee">Animals in Science Committee (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="civil-service-government-veterinary-surgeons" id="civil-service-government-veterinary-surgeons"/><label for="civil-service-government-veterinary-surgeons">Government Veterinary Surgeons  (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="civil-service-reform" id="civil-service-reform"/><label for="civil-service-reform">Civil Service Reform (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="commission-on-human-medicines" id="commission-on-human-medicines"/><label for="commission-on-human-medicines">Commission on Human Medicines (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="commissioner-for-public-appointments" id="commissioner-for-public-appointments"/><label for="commissioner-for-public-appointments">Commissioner for Public Appointments (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="companies-house" id="companies-house"/><label for="companies-house">Companies House  (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="competition-and-markets-authority" id="competition-and-markets-authority"/><label for="competition-and-markets-authority">Competition and Markets Authority (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="competition-commission" id="competition-commission"/><label for="competition-commission">Competition Commission (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="crown-commercial-service" id="crown-commercial-service"/><label for="crown-commercial-service">Crown Commercial Service (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="disclosure-and-barring-service" id="disclosure-and-barring-service"/><label for="disclosure-and-barring-service">Disclosure and Barring Service (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="driving-standards-agency" id="driving-standards-agency"/><label for="driving-standards-agency">Driving Standards Agency (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="economic-and-social-research-council" id="economic-and-social-research-council"/><label for="economic-and-social-research-council">Economic and Social Research Council (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="fco-services" id="fco-services"/><label for="fco-services">FCO Services (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-actuarys-department" id="government-actuarys-department"/><label for="government-actuarys-department">Government Actuary's Department (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="government-security-profession" id="government-security-profession"/><label for="government-security-profession">Government Security Profession (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="higher-education-funding-council-for-england" id="higher-education-funding-council-for-england"/><label for="higher-education-funding-council-for-england">Higher Education Funding Council for England (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="marine-management-organisation" id="marine-management-organisation"/><label for="marine-management-organisation">Marine Management Organisation (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="monitor" id="monitor"/><label for="monitor">Monitor (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="national-college-for-teaching-and-leadership" id="national-college-for-teaching-and-leadership"/><label for="national-college-for-teaching-and-leadership">National College for Teaching and Leadership (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="national-employer-advisory-board" id="national-employer-advisory-board"/><label for="national-employer-advisory-board">National Employer Advisory Board (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="national-information-board" id="national-information-board"/><label for="national-information-board">National Information Board (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="nhs-commissioning-board" id="nhs-commissioning-board"/><label for="nhs-commissioning-board">NHS England (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="office-of-the-advocate-general-for-scotland" id="office-of-the-advocate-general-for-scotland"/><label for="office-of-the-advocate-general-for-scotland">Office of the Advocate General for Scotland (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="office-of-the-regulator-of-community-interest-companies" id="office-of-the-regulator-of-community-interest-companies"/><label for="office-of-the-regulator-of-community-interest-companies">Office of the Regulator of Community Interest Companies (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="rural-development-programme-for-england-network" id="rural-development-programme-for-england-network"/><label for="rural-development-programme-for-england-network">Rural Development Programme for England Network (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="social-security-advisory-committee" id="social-security-advisory-committee"/><label for="social-security-advisory-committee">Social Security Advisory Committee (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="sport-england" id="sport-england"/><label for="sport-england">Sport England (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="standards-and-testing-agency" id="standards-and-testing-agency"/><label for="standards-and-testing-agency">Standards and Testing Agency (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="the-national-archives" id="the-national-archives"/><label for="the-national-archives">The National Archives (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="the-parliamentary-and-health-service-ombudsman" id="the-parliamentary-and-health-service-ombudsman"/><label for="the-parliamentary-and-health-service-ombudsman">The Parliamentary and Health Service Ombudsman  (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="the-shareholder-executive" id="the-shareholder-executive"/><label for="the-shareholder-executive">The Shareholder Executive (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="uk-commission-for-employment-and-skills" id="uk-commission-for-employment-and-skills"/><label for="uk-commission-for-employment-and-skills">UK Commission for Employment and Skills (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="valuation-office-agency" id="valuation-office-agency"/><label for="valuation-office-agency">Valuation Office Agency (1)</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter_organisations[]" value="veterans-uk" id="veterans-uk"/><label for="veterans-uk">Veterans UK (1)</label>
+                </li>
+            </ul>
+</div>
+        </div>
+
+      <div class="submit js-live-search-fallback">
+        <input type="submit" class="button" value="Submit filters"/>
+</div>
+    </div>
+  </div>
+
+<div class="results-block">
+  <div class="inner-block js-live-search-results-list">
+    <div class="result-count " id="js-live-search-result-count" aria-hidden="true">
+        830 results found
+    </div>
+    
+      <ol class="results-list" id="js-live-search-results" start="1">
+<li>
+              <h3><a href="/government/organisations/department-of-health/about/equality-and-diversity">Department of Health &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 10 February 2014 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Department of Health">DH</abbr> </li>
+                </ul>
+<p>As a public body, we publish regular information about what our equality objectives are and how we're meeting them.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/civil-service">Civil Service</a></h3>
+        
+        
+        
+        
+        
+        
+              <p>The home of Civil Service on GOV.UK. The Civil Service helps the government of the day develop and implement its policies as effectively as possible. </p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/department-for-work-pensions/about/equality-and-diversity">Department for Work and Pensions &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 11 July 2014 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Department for Work and Pensions">DWP</abbr> </li>
+                </ul>
+<p>The Department for Work and Pensions is committed to providing services which embrace diversity and that promote equality of opportunity.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/department-of-health/about/recruitment">Department of Health &#x2013; Working for DH</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 20 March 2015 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Department of Health">DH</abbr> </li>
+                </ul>
+<p>We offer a varied, exciting, challenging and rewarding working environment.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/publications/equality-and-diversity">Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li>  1 July 2012 </li>
+                    <li> Guidance </li>
+                    <li> <abbr title="Department for Culture, Media &amp; Sport">DCMS</abbr> </li>
+                </ul>
+<p>Everyone should be able to make the most of the rich culture and sport around the country</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/news/election-2015-prime-minister-and-ministerial-appointments">Election 2015: Prime Minister and ministerial appointments</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 12 May 2015 </li>
+                    <li> News story </li>
+                    <li> <abbr title="Cabinet Office">CO</abbr>, <abbr title="Prime Minister's Office, 10 Downing Street">Number 10</abbr> </li>
+                </ul>
+<p>Following the 2015 general election, David Cameron has formed a government. View details of ministers confirmed so far. </p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/home-office/about/equality-and-diversity">Home Office &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> Corporate information </li>
+                    <li> Home Office </li>
+                </ul>
+<p>We incorporate equality into our core objectives, making every effort to eliminate discrimination, promote equal opportunities and foster good working relationships between different people.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="guidance/how-to-publish-on-gov-uk/organisation-pages">How to publish on GOV.UK: Organisation pages</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> Manual section </li>
+                    <li> <abbr title="Government Digital Service">GDS</abbr> </li>
+                </ul>
+<p>How to create, edit and add content to your organisation pages.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="guidance/content-design/content-types">Content design: planning, writing and managing content: Content types</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> Manual section </li>
+                    <li> <abbr title="Government Digital Service">GDS</abbr> </li>
+                </ul>
+<p>When and how to use the GOV.UK formats.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/department-for-education/about/equality-and-diversity">Department for Education &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 12 March 2015 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Department for Education">DfE</abbr> </li>
+                </ul>
+<p>DfE aims to set an example as an employer and is developing policies that aim to make opportunity equal for children and young people.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/publications/bis-equality-and-diversity-2014">BIS equality and diversity: 2014</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 30 January 2015 </li>
+                    <li> Transparency data </li>
+                    <li> <abbr title="Department for Business, Innovation &amp; Skills">BIS</abbr> </li>
+                </ul>
+<p>Department for Business, Innovation and Skills staff equality data containing a breakdown of staff by grade.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/department-for-international-development/about/equality-and-diversity">Department for International Development &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li>  5 September 2013 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Department for International Development">DFID</abbr> </li>
+                </ul>
+<p>Our Equality and Diversity strategy.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/people/sarah-veale">Sarah Veale CBE</a></h3>
+        
+        
+        
+        
+        
+        
+              <p/>
+        
+                <ul class="sections">
+<li><a href="/government/people/sarah-veale#biography">Biography</a></li>
+                    <li><a href="/government/people/sarah-veale#current-roles">Roles</a></li>
+                </ul>
+</li>
+            <li>
+              <h3><a href="/government/organisations/uk-export-finance/about/equality-and-diversity">UK Export Finance &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> Corporate information </li>
+                    <li> <abbr title="UK Export Finance">UKEF</abbr> </li>
+                </ul>
+<p>The policies and objectives UK Export Finance has in place to meet its equality and diversity duties.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/guide-to-the-government-legal-service-gls-organisations">Guide to the Government Legal Service (GLS) Organisations</a></h3>
+        
+        
+        
+                <p class="meta crumbtrail">
+                  <span class="visuallyhidden">Part of </span>
+                  <span class="section">Working</span>
+                    <span class="visuallyhidden">, </span>
+                    <span class="subsection">Finding job</span>
+                    <span class="visuallyhidden">, </span>
+                    <span class="subsubsection">Applying for government graduate schemes</span>
+                </p>
+        
+        
+        
+              <p>Lawyers in the Government Legal Service provide legal advice to the government and represent it in court proceedings. </p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/animal-and-plant-health-agency/about/equality-and-diversity">Animal and Plant Health Agency &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li>  1 October 2014 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Animal and Plant Health Agency">APHA</abbr> </li>
+                </ul>
+<p>APHA's equality and diversity policies and how equality and diversity are monitored.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/cabinet-office/about/equality-and-diversity">Cabinet Office &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> 20 August 2014 </li>
+                    <li> Corporate information </li>
+                    <li> <abbr title="Cabinet Office">CO</abbr> </li>
+                </ul>
+<p>We are committed to ensuring that equality stays at the heart of our organisation by actively considering equality across all areas.&#xD;
+</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/publications/department-of-health-equality-objectives-2012-to-2016">Department of Health Equality Objectives 2012 to 2016</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li>  4 April 2012 </li>
+                    <li> Policy paper </li>
+                    <li> <abbr title="Department of Health">DH</abbr> </li>
+                </ul>
+<p class="historic">
+                  First published during the 2010 to 2015 Conservative and Liberal Democrat coalition government
+                </p>
+        
+              <p>Department of Health Equality Objectives 2012 to 2016.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/government/organisations/rural-payments-agency/about/equality-and-diversity">Rural Payments Agency &#x2013; Equality and diversity</a></h3>
+        
+        
+        
+        
+                <ul class="attributes">
+<li> Corporate information </li>
+                    <li> <abbr title="Rural Payments Agency">RPA</abbr> </li>
+                </ul>
+<p>As a public body, we publish information about what our equality objectives are and how we're meeting them.</p>
+        
+        
+        
+        
+            </li>
+            <li>
+              <h3><a href="/national-recovery-guidance-humanitarian-aspects">National Recovery Guidance: humanitarian issues</a></h3>
+        
+        
+        
+                <p class="meta crumbtrail">
+                  <span class="visuallyhidden">Part of </span>
+                  <span class="section">Citizenship</span>
+                    <span class="visuallyhidden">, </span>
+                    <span class="subsection">Government</span>
+                    <span class="visuallyhidden">, </span>
+                    <span class="subsubsection">Emergencies preparation response and recovery</span>
+                </p>
+        
+        
+        
+              <p>Guidance primarily aimed at local responders covering some humanitarian issues that may arise during the Recovery Phase of an emergency in the UK.</p>
+        
+        
+        
+        
+            </li>
+      </ol>
+<ul class="previous-next-navigation">
+<li class="next">
+            <a href="/search?q=DH+equality+and+diversity&amp;start=20">
+              Next <span class="visuallyhidden">page</span>
+              <span class="page-numbers">2 of 42</span>
+            </a>
+          </li>
+      </ul>
+</div>
+</div>
+
+    </div>
+  </form>
+</main><h3 class="visuallyhidden">No more results for &#x201C;DH equality and diversity&#x201D;. <a href="#search-main">Try a different search?</a>
+</h3>
+
+      
+      
+    <div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/search?q=DH+equality+and+diversity"/><input id="source" name="source" type="hidden" value=""/><input id="page_owner" name="page_owner" type="hidden" value=""/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

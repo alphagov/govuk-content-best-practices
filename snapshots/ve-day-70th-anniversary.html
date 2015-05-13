@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </meta>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>You're not on GOV.UK!</h2>
+        <p>This is just a snapshot of a content page that follows best practices. <a style="color: white; text-decoration: underline" href="https://www.gov.uk/guidance/content-design/content-types">return to the guidance on GOV.UK content types</a>.</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="whitehall-wrapper">
+      
+  <main id="content" role="main" class="whitehall-content"><div id="page" class="topical-events-show">
+      
+<div class="topical_event classification topical_event" id="topical_event_102">
+
+  <header class="block headings-block"><div class="inner-block floated-children">
+      <div class="heading-big-with-extra">
+  <div class="inner-heading">
+    <p class="type">Topic</p>
+    <h1>VE Day 70th anniversary</h1>
+  </div>
+</div>
+
+    </div>
+  </header><div class="block">
+    <div class="inner-block">
+      <div class="page-description">
+        <section class="description"><div class="govspeak">
+<p>Friday 8 May 2015 is the anniversary of VE Day (Victory in Europe Day), marking 70 years since the end of the second world war in Europe.</p>
+
+<p>The occasion will be commemorated with events across the UK.</p>
+</div>
+        </section>
+</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="inner-block">
+      <section class="featured-news items-4"><article class="classification_featuring feature item-0" id="classification_featuring_2826"><div class="content">
+    <span class="image-holder">
+      <a class="img" href="/government/news/victory-in-europe-ve-day-celebrations" title="Read the Victory in Europe (VE) Day celebrations article"><img alt="A truck of revellers passing through the Strand, London [Picture: Imperial War Museum HU 41808]" class="featured-image" src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/classification_featuring_image_data/file/1235/s465_VEdaytruck.jpg"/></a>
+    </span>
+    <div class="text">
+      <h2><a href="/government/news/victory-in-europe-ve-day-celebrations">Victory in Europe (VE) Day celebrations</a></h2>
+        <p class="summary">A 3-day weekend of events will mark the 70th anniversary of Victory in Europe (VE) Day.</p>
+    </div>
+  </div>
+</article><article class="classification_featuring feature item-1" id="classification_featuring_2950"><div class="content">
+    <span class="image-holder">
+      <a class="img" href="/government/news/ve-day-beacons" title="Read the VE Day Beacons article"><img alt="Beacon from Queen's diamond jubilee" class="featured-image" src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/classification_featuring_image_data/file/1236/s465_VEDaybeacons.jpg"/></a>
+    </span>
+    <div class="text">
+      <h2><a href="/government/news/ve-day-beacons">VE Day Beacons</a></h2>
+        <p class="summary">Over 200 beacons will be lit on Friday 8 May to mark Victory in Europe (VE) Day.</p>
+    </div>
+  </div>
+</article><article class="classification_featuring feature item-2" id="classification_featuring_2893"><div class="content">
+    <span class="image-holder">
+      <a class="img" href="/government/news/events-map-launched-for-victory-in-europe-ve-day-celebrations" title="Read the Events map launched for Victory in Europe (VE) Day celebrations article"><img alt="Screenshot of a map showing VE Day events around the country" class="featured-image" src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/classification_featuring_image_data/file/1260/s465_VE_DAY_3.jpg"/></a>
+    </span>
+    <div class="text">
+      <h2><a href="/government/news/events-map-launched-for-victory-in-europe-ve-day-celebrations">Events map launched for Victory in Europe (VE) Day celebrations</a></h2>
+        <p class="summary">This online events map tracks events across the UK marking the 70th anniversary of Victory in Europe (VE) Day.</p>
+    </div>
+  </div>
+</article><article class="classification_featuring feature item-3" id="classification_featuring_2940"><div class="content">
+    <span class="image-holder">
+      <a class="img" href="/government/news/ve-day-events-and-general-information" title="Read the VE Day: events and general information article"><img alt="Ground crew on a RAF Bomber Command station in Britain return the V-sign to a neighbouring searchlight crew . Silhouetted is the nose of a Lancaster. [Picture: Imperial War Museum CH 15165]" class="featured-image" src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/classification_featuring_image_data/file/1237/s465_VEDay_bombers.jpg"/></a>
+    </span>
+    <div class="text">
+      <h2><a href="/government/news/ve-day-events-and-general-information">VE Day: events and general information</a></h2>
+        <p class="summary">This page provides general information and lists events taking place throughout the 3-day weekend marking the 70th anniversary of VE Day.</p>
+    </div>
+  </div>
+</article><section id="recently-updated" class="recently-updated panel"><div class="content">
+    <header><h1 class="label">Latest</h1>
+    </header><ol class="document-list">
+<li class="recent_news_article document-row" id="recent_news_article_496048">
+      <h2><a href="/government/news/hm-the-queen-leads-ve-day-70-commemorations-at-westminster-abbey">HM The Queen leads VE Day 70 commemorations at Westminster Abbey</a></h2>
+      <ul class="attributes">
+<li class="published-date">
+          published
+          <abbr class="published-at date" title="2015-05-10T13:00:00+01:00">10 May 2015</abbr>
+        </li>
+        <li class="display-type">News story</li>
+      </ul>
+</li>    <li class="recent_news_article document-row" id="recent_news_article_496012">
+      <h2><a href="/government/news/cenotaph-service-leads-3-days-of-events-to-mark-70th-anniversary-of-ve-day">Cenotaph service leads 3 days of events to mark 70th anniversary of VE Day</a></h2>
+      <ul class="attributes">
+<li class="published-date">
+          published
+          <abbr class="published-at date" title="2015-05-08T17:43:45+01:00"> 8 May 2015</abbr>
+        </li>
+        <li class="display-type">Press release</li>
+      </ul>
+</li>    <li class="recent_publication document-row" id="recent_publication_495709">
+      <h2><a href="/government/publications/ve-day-70-order-of-service">VE Day 70: Order of Service</a></h2>
+      <ul class="attributes">
+<li class="published-date">
+          published
+          <abbr class="published-at date" title="2015-05-08T10:13:42+01:00"> 8 May 2015</abbr>
+        </li>
+        <li class="display-type">Guidance</li>
+      </ul>
+</li>
+</ol>
+<div class="feeds">
+    <span>Get updates to this list</span>
+    <a class="govdelivery" href="/government/email-signup/new?email_signup%5Bfeed%5D=https%3A%2F%2Fwww.gov.uk%2Fgovernment%2Ftopical-events%2Fve-day-70th-anniversary.atom">email</a>&#xA0;<a class="feed js-feed" href="https://www.gov.uk/government/topical-events/ve-day-70th-anniversary.atom">feed</a>
+    <div class="feed-panel js-feed-panel">
+      <h3>Copy and paste this URL in to your feed reader</h3>
+      <input value="https://www.gov.uk/government/topical-events/ve-day-70th-anniversary.atom"/>
+</div>
+  </div>
+
+      <p class="see-all">
+        <a href="/government/latest?topics%5B%5D=ve-day-70th-anniversary">See all</a>
+      </p>
+  </div>
+</section></section>
+</div>
+  </div>
+
+  <div class="documents-grid grid-size-2">
+    <div class="inner-block">
+      <section id="publications" class="document-block documents-1"><h1 class="label">Publications</h1>
+  <div class="content">
+    <ol class="document-list">
+<li class="publication document-row" id="publication_495709">
+      <h2><a href="/government/publications/ve-day-70-order-of-service">VE Day 70: Order of Service</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-05-08T10:13:42+01:00"> 8 May 2015</abbr></li>
+        <li class="document-type">Guidance</li>
+      </ul>
+</li>    <li class="publication document-row" id="publication_475250">
+      <h2><a href="/government/publications/your-guide-to-organising-a-street-party">Your guide to organising a street party</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-03-17T17:17:06+00:00">17 March 2015</abbr></li>
+        <li class="document-type">Guidance</li>
+      </ul>
+</li>    <li class="publication document-row" id="publication_494015">
+      <h2><a href="/government/publications/celebrating-bonfire-night">Celebrating with bonfires and fireworks</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-03-17T17:16:07+00:00">17 March 2015</abbr></li>
+        <li class="document-type">Guidance</li>
+      </ul>
+</li>
+</ol>
+<p class="see-all">
+      <a href="/government/publications?publication_filter_option=all&amp;topics%5B%5D=ve-day-70th-anniversary">See all publications</a>
+    </p>
+  </div>
+</section><section id="announcements" class="document-block documents-2"><h1 class="label">Announcements</h1>
+  <div class="content">
+    <ol class="document-list">
+<li class="news_article document-row" id="news_article_496048">
+      <h2><a href="/government/news/hm-the-queen-leads-ve-day-70-commemorations-at-westminster-abbey">HM The Queen leads VE Day 70 commemorations at Westminster Abbey</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-05-10T13:00:00+01:00">10 May 2015</abbr></li>
+        <li class="document-type">News story</li>
+      </ul>
+</li>    <li class="news_article document-row" id="news_article_496012">
+      <h2><a href="/government/news/cenotaph-service-leads-3-days-of-events-to-mark-70th-anniversary-of-ve-day">Cenotaph service leads 3 days of events to mark 70th anniversary of VE Day</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-05-08T17:43:45+01:00"> 8 May 2015</abbr></li>
+        <li class="document-type">Press release</li>
+      </ul>
+</li>    <li class="news_article document-row" id="news_article_495840">
+      <h2><a href="/government/news/the-two-minute-silence-remembrance-of-the-glorious-dead">The two-minute silence: remembrance of the Glorious Dead</a></h2>
+      <ul class="attributes">
+<li class="publication-date"><abbr class="public_timestamp" title="2015-05-07T19:19:00+01:00"> 7 May 2015</abbr></li>
+        <li class="document-type">News story</li>
+      </ul>
+</li>
+</ol>
+<p class="see-all">
+      <a href="/government/announcements?publication_filter_option=announcements&amp;topics%5B%5D=ve-day-70th-anniversary">See all announcements</a>
+    </p>
+  </div>
+</section>
+</div>
+  </div>
+
+
+  <div class="block heading-block">
+    <div class="inner-block">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </main><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2 class="js-original-variant">Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"/></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/government/topical-events/ve-day-70th-anniversary"/><input id="source" name="source" type="hidden" value="inside_government"/><input id="page_owner" name="page_owner" type="hidden" value=""/><div class="js-original-variant">
+          <p>Don&#x2019;t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+          <label for="what_doing">What you were doing</label>
+          <input id="what_doing" name="what_doing" type="text"/><label for="what_wrong">What went wrong</label>
+          <input id="what_wrong" name="what_wrong" type="text"/>
+</div>
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"/>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"/>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"/>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"/>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </meta>
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></meta></meta></link></link></link></link></link></link></link></link></meta></head></html>

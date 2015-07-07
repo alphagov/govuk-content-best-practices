@@ -13,7 +13,7 @@ class Crawler
   def run
     links.each do |link|
       puts "Opening #{link}..."
-      slug = link.split("/").last.gsub(/[&=?\+]/, "_")
+      slug = link.split(".uk/").last.gsub(/[&=?\+]/, "_").gsub("/", "-")
       doc = open_url(link)
       parsed = Nokogiri::HTML(doc)
       relevant_content = parsed.at_css("#whitehall-wrapper") || parsed.at_css("#wrapper")

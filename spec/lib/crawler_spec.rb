@@ -23,4 +23,15 @@ RSpec.describe Crawler do
     expect(File.exists?("spec/fixtures/search_query_1_sort_asc.html")).to eq true
     FileUtils.rm("spec/fixtures/search_query_1_sort_asc.html")
   end
+
+  it "transforms full path to a filename to avoid duplicates" do
+    crawler = described_class.new(["http://gov.uk/department/stats"], persist_to: "spec/fixtures")
+
+    expect(crawler).to receive(:open_url).and_return "<html><div id=\"wrapper\">Relevant content</div></html>"
+
+    crawler.run
+
+    expect(File.exists?("spec/fixtures/department-stats.html")).to eq true
+    FileUtils.rm("spec/fixtures/department-stats.html")
+  end
 end

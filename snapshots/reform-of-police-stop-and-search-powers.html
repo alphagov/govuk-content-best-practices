@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="en">
+  <![endif]--><!--[if gt IE 8]><!-->
+  <html lang="en">
+    <!--<![endif]-->
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>GOV.UK best practice example</title>
+      <script type="text/javascript">
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+      </script><!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-b05d71e9007bfa8712fc4c4b935c8cfe.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie6-1b4f1fc138f0ec09268bcbfe67c881a1.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie7-fc86b6fe9d3788e3b52a4256bffdaf40.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/govuk-template-ie8-1b8da992d1dff1ff1178112ae63480e9.css" media="screen" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link href="/govuk-content-best-practices/assets/govuk-template-print-95606431bbfe23b0e4ee9e5ed3346c47.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if IE 8]>
+      <script type="text/javascript">
+        (function(){if(window.opera){return;}
+         setTimeout(function(){var a=document,g,b={families:(g=
+         ["nta"]),urls:["/assets/fonts-ie8-a840daa155b9e5f516d377b01ce50dcd.css"]},
+         c="/assets/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+         e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+         ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+         .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+      </script>
+      <![endif]--><!--[if gte IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/fonts-83e596ae63d072e22b7f34d2b5482bde.css" media="all" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if lt IE 9]>
+      <script src="/assets/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="/govuk-content-best-practices/assets/favicon-9269d2d9f40d20236f60a3dbc448679a.ico" type="image/x-icon">
+      <!-- Size for iPad and iPad mini (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/govuk-content-best-practices/assets/apple-touch-icon-152x152-58591dcff066ba321b89a9e208ccedab.png">
+      <!-- Size for iPhone and iPod touch (high resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govuk-content-best-practices/assets/apple-touch-icon-120x120-b6a680ead8eb531b9c28cc056836ad06.png">
+      <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/govuk-content-best-practices/assets/apple-touch-icon-76x76-17dd3f1e168561f9099ba92e3292e607.png">
+      <!-- Default non-defined size, also used for Android 2.1+ devices -->
+      <link rel="apple-touch-icon-precomposed" href="/govuk-content-best-practices/assets/apple-touch-icon-60x60-dc9aa421bedcf2c08c4e8f3f230f780d.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="/assets/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png">
+      <!--[if gt IE 8]><!-->
+      <link href="/govuk-content-best-practices/assets/header-footer-only-8d96e8cea03dbe0ecb020054955e67c8.css" media="screen" rel="stylesheet" type="text/css">
+      <!--<![endif]--><!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie6-1cc0d4e0b6bd80f9ce6ddbc840602917.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie7-6a60f364fbfb3daa815f048b5dfa601d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/header-footer-only-ie8-a04a1edf0cdbe898adc6197c7705030d.css" media="screen" rel="stylesheet" type="text/css" />
+      <script>var ieVersion = 8;</script><![endif]-->
+      <link href="/govuk-content-best-practices/assets/print-885c0e730d8d8e704542e8304c523b9b.css" media="print" rel="stylesheet" type="text/css">
+      <!--[if gt IE 9]><!-->
+      <link href="/govuk-content-best-practices/assets/base-a27f2c4627a9b3dab6c58e7541cac5f22dd51e8af605a9309a5bf3deba357dc3.css" media="screen" rel="stylesheet">
+      <!--<![endif]-->
+      <link href="/govuk-content-best-practices/assets/core-layout-3af169a02eeb66de0f008dcedf799ae7.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/case-studies-application-ebb9f199f37a453460b3c52d4f4e66dc.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/print-4360a9429a952b5cc2857c5d805596be61c00b9563a96081ac5f9c1bdcec09d1.css" media="print" rel="stylesheet">
+      <link href="/govuk-content-best-practices/assets/collections-application-25bffcb0364cc8a22de7f01f103a26a1.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="/govuk-content-best-practices/assets/manuals-frontend-application-1137820c48cef392b890c01ee0856e8b.css" media="screen" rel="stylesheet" type="text/css">
+      <meta content="True" name="HandheldFriendly">
+      <meta content="320" name="MobileOptimized">
+      <meta content="authenticity_token" name="csrf-param">
+      <meta content="WlMi5Ei8xQYmMpCJn1VsFVvOLXRh8sNO0PiPYezT20I=" name="csrf-token">
+      <meta content="historic" name="govuk:political-status">
+      <meta content="2005-to-2010-labour-government" name="govuk:publishing-government">
+      <!--[if IE 6]>
+      <link href="/govuk-content-best-practices/assets/base-ie6-d6321525941a35c17b1aed6f912b5ac270ffdddc954c7fe767030c9e77d1f52b.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]>
+      <link href="/govuk-content-best-practices/assets/base-ie7-ee70a6ba263cfe3ce08b722fa00067ce8eb5301621c5a9de962fa1298e559af3.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]>
+      <link href="/govuk-content-best-practices/assets/base-ie8-ec15bd081a8ebaf2bb5f17dbf4968a3e4020e8d6cd62f0106e5aae06c7e60b15.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 8;</script><![endif]--><!--[if IE 9]>
+      <link href="/govuk-content-best-practices/assets/base-ie9-7a768893fa763807de180d5d7b7c1f6d9208949aab43d447100c6b6d528dfb14.css" media="screen" rel="stylesheet" />
+      <script>var ieVersion = 9;</script><![endif]-->
+      <meta name="govuk:analytics:organisations" content="&lt;D109&gt;">
+      <style>
+        .history-status-block {
+          clear: both;
+          margin: 30px 15px;
+          padding: 20px 30px;
+          color: #fff;
+          background: #005ea5;
+        }
+        .history-status-block h2 {
+          font-family: "nta", Arial, sans-serif;
+          font-size: 36px;
+          line-height: 1.11111;
+          text-transform: none;
+          padding-top: 6px;
+          padding-bottom: 9px;
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body class="website government">
+      <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+      <div class="header-context group">
+        <!-- deliberately empty -->
+      </div>
+      <div class="history-status-block" id="wrapper">
+        <h2>This is not GOV.UK</h2>
+        <p>This page is an example of how to use this content type. <a style="color:#FFF;" href="https://www.gov.uk/guidance/content-design/content-types ">Back to the guidance</a> (other links on this page may not work).</p>
+      </div>
+      <!-- Inserted content starts -->
+
+      <div id="wrapper" class="direction-ltr">
+    <main role="main" id="content" class="speech" lang="en">
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-title length-long">
+    <p class="context">Oral statement to Parliament</p>
+  <h1>Reform of police stop and search powers</h1>
+</div>
+
+  </div>
+    <div class="column-third">
+
+  </div>
+
+</div>
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-metadata direction-ltr" data-module="toggle">
+  <dl>
+      <dt>From:</dt>
+      <dd>
+          <a href="/government/organisations/home-office">Home Office</a> and <a href="/government/people/theresa-may">The Rt Hon Theresa May MP</a>
+
+      </dd>
+      <dt>Published:</dt>
+      <dd>30 April 2014</dd>
+          <dt>Delivered on:</dt>
+          <dd>
+              <time datetime="2014-04-30T00:00:00+01:00">30 April 2014</time>
+
+          </dd>
+  </dl>
+</div>
+
+  </div>
+</div>
+
+  <p class="description">
+    Statement of proposals to reduce the use of stop and search, make it more intelligence-led and improve stop-to-arrest ratios.
+  </p>
+
+<div class="grid-row sidebar-with-body">
+    <div class="column-third">
+        <figure class="sidebar-image">
+    <img src="/government/uploads/system/uploads/person/image/6/PM_portrait_960x640.jpg" alt="The Rt Hon Theresa May MP">
+
+  </figure>
+
+    </div>
+  <div class="column-two-thirds ">
+
+<div class="govuk-govspeak direction-ltr">
+  <div class="govspeak">
+<p>With permission, Mr Speaker, I would like to make a statement about the use of stop and search powers by the police.</p>
+
+<p>As I have told the House before, I have long been concerned about the use of stop and search.  While it is undoubtedly an important police power, when it is misused stop and search can be counter-productive.  First, it can be an enormous waste of police time.  Second, when innocent people are stopped and searched for no good reason, it is hugely damaging to the relationship between the police and the public.  In those circumstances it is an unacceptable affront to justice.</p>
+
+<p>That is why I commissioned Her Majesty’s Inspectorate of Constabulary to inspect every force in England and Wales to see how stop and search powers are used.  And it is why, last year, I launched a consultation to make sure members of the public – particularly young people and people from minority ethnic communities – could have their say.</p>
+
+<p>Today I am publishing a summary of the responses to the consultation and placing a copy in the House Library.  The consultation generated more than 5,000 responses, and it was striking that those on the receiving end of stop and search had very different attitudes to those who are not.  While 76% of people aged between 55 and 74 thought stop and search powers are effective, only 38% of people aged between 18 and 24 agreed.  While 66% of white people thought stop and search powers are effective, only 38% of black people agreed.</p>
+
+<p>The findings of the HMIC inspection were deeply concerning.  The inspectorate reported that 27% of the stop and search records they examined did not contain reasonable grounds to search people, even though many of these records had been endorsed by supervising officers.  If the HMIC sample is accurate, that means more than a quarter of the one million or so stops carried out under the Police and Criminal Evidence Act last year could have been illegal.</p>
+
+<p>This is not the only worrying statistic.  Official figures show that if you are black or from a minority ethnic background, you are up to seven times more likely to be stopped and searched by the police than if you are white, and only about ten per cent of stops result in an arrest.</p>
+
+<p>In London, thanks to the leadership of Sir Bernard Hogan-Howe, changes to stop and search show that it is possible to reduce the number of stops, improve the stop-to-arrest ratio and still cut crime.  Since February 2012, the Metropolitan Police have reduced their overall use of stop and search by 20%.  They have reduced no-suspicion stop and search by 90%.  In the same period, stabbings have fallen by a third and shootings by forty per cent.  Complaints against the police have gone down and the arrest ratio has improved.</p>
+
+<p>I want to see further progress in London and across the whole of England and Wales.  So I can tell the House that I intend to revise the Police and Criminal Evidence Act Code of Practice A to make clear what constitutes “reasonable grounds for suspicion” – the legal basis upon which police officers carry out the vast majority of stops.</p>
+
+<p>The revised code will emphasise that where officers are not using their powers properly they will be subject to formal performance or disciplinary proceedings.</p>
+
+<p>HMIC’s study into the use of stop and search revealed that more than half the police forces in the country are ignoring the requirement set out in the Police and Criminal Evidence Act Code of Practice A to make arrangements for public scrutiny of stop-and-search records. This is an important duty that should empower local communities to hold police forces to account, and so I have written to all chief constables and police and crime commissioners to tell them to adhere to the code.  I have told them that if they do not do so, the government will bring forward legislation to make this a statutory requirement.</p>
+
+<p>Earlier today I commissioned Alex Marshall, the chief executive of the College of Policing, to review the national training of stop and search with a view to developing robust professional standards for officers on probation, existing officers, supervisors and police leaders.  I have asked the College to include in this work unconscious bias awareness training to reduce the possibility of prejudice informing officers’ decisions.</p>
+
+<p>As part of that review, I have also asked the College to introduce an assessment of officers’ fitness to use stop and search powers.  I want this to send the clearest possible message – if officers do not pass this assessment, if they do not understand the law or they do not show they know how to use stop and search powers appropriately, they will not be allowed to use them.</p>
+
+<p>In order to save as much police time as possible, I have asked my officials in the Home Office to work with chief constables and police and crime commissioners to explore the possibility of recording information on the use of stop and search via the new Emergency Services Network.</p>
+
+<p>In addition to all these changes, I can tell the House that, this summer, the Home Office and the College of Policing will launch a new ‘Best Use of Stop and Search’ scheme.  This scheme already has the backing of the Metropolitan Police – the biggest user of stop and search in the country – and today I have written to all other police forces in England and Wales inviting them to sign up.</p>
+
+<p>Forces participating in the scheme will record the outcome of stops in more detail to show the link – or the lack of a link – between the object of the search and its outcome.  This will allow us to assess how well forces are interpreting the “reasonable grounds for suspicion” they are supposed to have to use their stop and search powers in accordance with law.  The scheme will also require forces to record a broader range of outcomes, such as penalty notices for disorder and cautions.  This will allow us to understand better how successful each stop and search really is.</p>
+
+<p>In order to improve the public’s understanding of the police, forces participating in the scheme will introduce lay observation policies, which enable members of the local community to apply to accompany police officers on patrol.</p>
+
+<p>The scheme will also require forces to introduce a stop and search complaints “community trigger” whereby the police must explain to the public how stop and search powers are being used where there is a large volume of complaints.</p>
+
+<p>Forces participating in the scheme will make clear that they will respect the case law established in ‘Roberts’ by using no-suspicion stop and search when it is “necessary to prevent incidents involving serious violence” rather than just “expedient” to do so.  They will raise the level of authorisation to a chief officer and that officer must reasonably believe that violence “will” take place rather than “may”, as things stand now.  This will bring no-suspicion stop and search more into line with the stop and search powers under Section 47A of the Terrorism Act 2000, and I hope it will reduce the number of no-suspicion stops significantly.</p>
+
+<p>The scheme will also require forces to limit the application of no-suspicion stop and search to fifteen hours.  It will also require them to communicate with local communities in advance and afterwards, so residents can be kept informed of the purpose and success of the operation.</p>
+
+<p>In addition to these changes, in order to improve transparency and accountability, we will add stop and search data to the government’s hugely successful and popular crime maps at www.police.uk.  I have also asked Her Majesty’s Chief Inspector of Constabulary to include the use of stop and search in HMIC’s new annual general inspections which begin towards the end of this year.  And I have commissioned HMIC to review all other police powers similar to stop and search – including Section 163 of the Road Traffic Act – with a view to eliminating any unfair or inappropriate use of those powers.</p>
+
+<p>Mr Speaker, the proposals I have outlined today amount to a comprehensive package of reform.  I believe that they should contribute to a significant reduction in the overall use of stop and search, better and more intelligence-led stop and search and improved stop-to-arrest ratios.  But I want to make myself absolutely clear: if the numbers do not come down, if stop and search does not become more targeted, if those stop-to-arrest ratios do not improve considerably, the government will return with primary legislation to make these things happen.</p>
+
+<p>Because, Mr Speaker, nobody wins when stop and search is misapplied.  It is a waste of police time.  It is unfair, especially to young, black men.  It is bad for public confidence in the police.  That is why these are the right reforms and it’s why I commend this statement to the House.</p>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+<div class="govuk-document-footer direction-ltr">
+  <h2 class="visuallyhidden">
+    Document information
+  </h2>
+  <div class="history-information" id="history">
+      <p>
+        Published:
+        <span class="published definition">30 April 2014</span>
+      </p>
+  </div>
+  <div class="related-information">
+      <p>From: <span class="from">
+          <span class="definition">
+            <a href="/government/organisations/home-office">Home Office</a>
+          </span>
+          <span class="definition">
+            <a href="/government/people/theresa-may">The Rt Hon Theresa May MP</a>
+          </span>
+      </span></p>
+  </div>
+</div>
+
+      <!-- Inserted content ends -->
+      <script src="/assets/govuk-template-1d29c0379552e7f7ab67500dea47df2d.js" type="text/javascript"></script>
+      <script src="/assets/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+      <script src="/assets/header-footer-only-ea34ef20f38a3ef069e78bb2f6ae4544.js" type="text/javascript"></script>
+      <script src="/assets/application-951faf7db302d6ef9a52c9a028d24721c4a4e7090913e252941de8db2d16534c.js"></script>
+      <script>
+        //<![CDATA[
+
+        //]]>
+      </script>
+    </body>
+  </html>
